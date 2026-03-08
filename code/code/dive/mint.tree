@@ -1,7 +1,0 @@
-
-mint dive
-  case seed, mint seed
-    slot seed
-  hook make
-    make dive
-      bind seed, read seed

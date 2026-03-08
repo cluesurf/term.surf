@@ -50,10 +50,10 @@ load @cluesurf/term/code/code/kink/mine
 load @cluesurf/term/code/code/fuse/mine
   find fuse
 
-load @cluesurf/term/code/code/beam/mine
+load @cluesurf/term/code/code/tree/beam/mine
   find beam
 
-load @cluesurf/term/code/code/slot/mine
+load @cluesurf/term/code/code/tree/slot/mine
   find slot
 
 load @cluesurf/term/code/code/note/mine
@@ -82,7 +82,7 @@ load @cluesurf/term/code/code/view/mine
 
 mine code
   mine list
-    mine case
+    mine any
       mine form, like form
         slot form
       mine form, like task

@@ -1,7 +1,0 @@
-
-mint rein
-  case task
-    slot task
-  hook make
-    make rein
-      bind task, read task

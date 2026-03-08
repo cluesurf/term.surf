@@ -1,4 +1,7 @@
 
+load @cluesurf/term/code/deck/deck/link/mine
+  find deck-link
+
 mine deck-host
   mine term, term host
     mine text

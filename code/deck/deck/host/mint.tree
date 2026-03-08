@@ -2,6 +2,9 @@
 load @cluesurf/base/code/deck
   find deck-deck-host
 
+load @cluesurf/term/code/deck/deck/link/mint
+  find deck-link
+
 mint deck-host, like deck-deck-host
   case site
     slot site

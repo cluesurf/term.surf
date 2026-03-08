@@ -10,7 +10,7 @@ load @cluesurf/term/code/code/note/mine
 
 mine bind
   mine list
-    mine case
+    mine any
       mine form, like bind-form
         slot form
       mine form, like bind-task

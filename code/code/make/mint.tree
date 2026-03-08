@@ -9,11 +9,8 @@ mint make
     slot bind
   case save, mint save
     slot save
-  case turn, mint turn
-    slot turn
   hook make
     make make
       bind name, read name
       bind bind, read bind
       bind save, read save
-      bind turn, read turn

@@ -1,4 +1,4 @@
 
-mill tell
+mill mold
   bind mine, load ./mine
   bind mint, load ./mint

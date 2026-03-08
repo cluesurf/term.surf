@@ -5,10 +5,10 @@ load @cluesurf/term/code/code/head/mine
 load @cluesurf/term/code/code/like/mine
   find like
 
-load @cluesurf/term/code/code/link/mine
+load @cluesurf/term/code/code/form/link/mine
   find link
 
-load @cluesurf/term/code/code/case/mine
+load @cluesurf/term/code/code/form/case/mine
   find case
 
 load @cluesurf/term/code/code/task/mine

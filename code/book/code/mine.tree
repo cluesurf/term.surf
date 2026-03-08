@@ -9,7 +9,7 @@
 mine code
   mine term, term code
     slot lang
-    mine case
+    mine any
       mine text
         slot text
       mine form, like code-tree

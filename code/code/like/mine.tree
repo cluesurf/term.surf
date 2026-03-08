@@ -1,14 +1,17 @@
 mine like
   mine term, term like
-    mine any
-      mine form, like or
-        slot or
-      mine form, like and
-        slot and
-      mine form, like task
-        slot task
-      mine term
-        slot name
+    mine term
+      slot name
+    mine maybe
+      mine any
+        mine form, like or
+          slot or
+        mine form, like and
+          slot and
+        mine form, like task
+          slot task
+        mine term
+          slot name
 
 mine or
   mine term, term or

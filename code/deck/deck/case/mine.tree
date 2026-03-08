@@ -1,4 +1,10 @@
 
+load @cluesurf/term/code/deck/deck/link/mine
+  find deck-link
+
+load @cluesurf/term/code/deck/deck/host/mine
+  find deck-host
+
 mine deck-case
   mine term, term case
     slot name

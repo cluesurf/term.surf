@@ -1,7 +1,0 @@
-
-mint site
-  case link
-    slot link
-  hook make
-    make site
-      bind link, read link

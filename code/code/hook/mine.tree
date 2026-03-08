@@ -5,7 +5,7 @@ load @cluesurf/term/code/code/line/mine
 load @cluesurf/term/code/code/base/mine
   find base
 
-load @cluesurf/term/code/code/flow/mine
+load @cluesurf/term/code/code/tool/flow/mine
   find flow
 
 load @cluesurf/term/code/code/task/mine
@@ -16,8 +16,8 @@ mine hook
     mine term
       slot name
     mine maybe
-      mine form, like line
-        slot line
+      mine term, term name
+        slot fork-name
     mine list
       mine form, like base
         slot base

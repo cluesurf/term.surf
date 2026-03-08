@@ -5,39 +5,26 @@ load @cluesurf/term/code/code/bind/mine
 load @cluesurf/term/code/code/seed/mine
   find seed
 
+load @cluesurf/term/code/code/hook/mine
+  find hook
+
+load @cluesurf/term/code/code/wait/mine
+  find wait
+
 mine call
   mine term, term call
     mine term
       slot name
+    mine case
+      mine form, like wait
     mine list
-      mine form, like bind
-        slot bind
-    mine maybe
-      mine case
-        mine form, like save
-          slot save
-        mine form, like turn
-          slot turn
+      mine any
+        mine form, like base
+        mine form, like bind
+          slot bind
     mine list
       mine form, like hook
         slot hook
-
-mine hook
-  mine term, term hook
-    mine term
-      slot name
-    mine maybe
-      mine form, like line
-        slot line
-    mine list
-      mine form, like base
-        slot base
-    mine list
-      mine form, like flow
-        slot flow
-    mine list
-      mine form, like task
-        slot task
 
 mine line
   mine term, term line

@@ -1,7 +1,0 @@
-
-mint tell
-  case seed, mint seed
-    slot seed
-  hook make
-    make tell
-      bind seed, read seed

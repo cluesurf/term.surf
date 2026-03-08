@@ -1,0 +1,7 @@
+
+mint wait
+  case text
+    slot text
+  hook make
+    make wait
+      bind text, read text

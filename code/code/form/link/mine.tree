@@ -2,22 +2,19 @@
 load @cluesurf/term/code/code/like/mine
   find like
 
-load @cluesurf/term/code/code/take/name/mine
-  find name
-
 load @cluesurf/term/code/code/seed/mine
   find seed
 
-mine take
-  mine term, term take
+mine link
+  mine term, term link
     mine term
       slot name
     mine maybe
       mine form, like like
         slot like
     mine maybe
-      mine form, like name
-        slot alias
+      mine term, term hide
+        slot hide
     mine maybe
       mine term, term need
         slot need
@@ -26,20 +23,20 @@ mine take
         mine form, like seed
           slot base
     mine list
-      mine form, like take-value
+      mine form, like link-take
         slot take
 
-mine take-value
+mine link-take
   mine term, term take
     mine any
       mine term
         slot term
       mine text
         slot text
-      mine form, like take-value-mark
+      mine form, like link-take-mark
         slot mark
 
-mine take-value-mark
+mine link-take-mark
   mine term, term mark
     mine term
       slot value

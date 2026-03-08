@@ -16,7 +16,7 @@ load @cluesurf/term/code/code/seed/mine
 
 mine base
   mine list
-    mine case
+    mine any
       mine form, like base-move
         slot move
       mine form, like base-find
@@ -108,7 +108,7 @@ mine base-find
         slot note
 
 mine base-find-flow
-  mine case
+  mine any
     mine form, like base-find-call
       slot call
     mine form, like base-find-save

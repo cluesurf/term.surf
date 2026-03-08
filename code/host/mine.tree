@@ -16,7 +16,7 @@ load @cluesurf/term/code/code/seed/mine
 
 mine host
   mine list
-    mine case
+    mine any
       mine form, like host-form
         slot form
       mine form, like host-task
@@ -69,7 +69,7 @@ mine host-task
         slot note
 
 mine host-task-flow
-  mine case
+  mine any
     mine form, like host-task-call
       slot call
     mine form, like host-task-save

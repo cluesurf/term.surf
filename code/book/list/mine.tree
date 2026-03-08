@@ -18,7 +18,7 @@
 mine list
   mine term, term list
     slot kind
-    mine case
+    mine any
       mine form, like list-mesh
         slot mesh
       mine form, like list-link

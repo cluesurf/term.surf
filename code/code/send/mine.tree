@@ -1,7 +1,7 @@
 load @cluesurf/term/code/code/seed/mine
   find seed
 
-mine back
+mine send
   mine term, term send
     mine term, term back
     mine maybe

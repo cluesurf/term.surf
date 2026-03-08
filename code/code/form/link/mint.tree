@@ -1,31 +1,31 @@
 
-load @cluesurf/base/code/take
-  find take
-  find take-value
+load @cluesurf/base/code/link
+  find link
+  find link-take
 
-mint take
+mint link
   case name
     slot name
   case like, mint like
     slot like
-  case alias
-    slot alias
+  case hide
+    slot hide
   case need
     slot need
   case base, mint seed
     slot base
-  case take, mint take-value
+  case take, mint link-take
     slot take
   hook make
-    make take
+    make link
       bind name, read name
       bind like, read like
-      bind alias, read alias
+      bind hide, read hide
       bind need, read need
       bind base, read base
       bind take, read take
 
-mint take-value, like take-value
+mint link-take, like link-take
   case term
     slot term
   case text
@@ -33,7 +33,7 @@ mint take-value, like take-value
   case mark
     slot mark
   hook make
-    make take-value
+    make link-take
       bind term, read term
       bind text, read text
       bind mark, read mark
