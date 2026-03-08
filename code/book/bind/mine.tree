@@ -1,0 +1,49 @@
+
+# bind cite
+#   mind <author-key>
+#     name <Author Name>
+#   cite <cite-key>
+#     date <2024-01-01>
+#     name <Title>
+#     site <https://example.com>
+#     mind <author-key>
+
+mine bind
+  mine term, term bind
+    take kind
+    mine list
+      mine case
+        mine form, form bind-mind
+          take mind
+        mine form, form bind-cite
+          take cite
+
+mine bind-mind
+  mine term, term mind
+    mine text
+      take key
+    mine maybe
+      mine term, term name
+        mine text
+          take name
+
+mine bind-cite
+  mine term, term cite
+    mine text
+      take key
+    mine maybe
+      mine term, term date
+        mine text
+          take date
+    mine maybe
+      mine term, term name
+        mine text
+          take name
+    mine maybe
+      mine term, term site
+        mine text
+          take site
+    mine maybe
+      mine term, term mind
+        mine text
+          take mind

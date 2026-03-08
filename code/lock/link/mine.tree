@@ -1,0 +1,21 @@
+
+mine link
+  mine term, term link
+    mine text
+      take name
+    mine maybe
+      mine term, term hash
+        mine text
+          take hash
+    mine list
+      mine form, form link-load
+        take load
+
+mine link-load
+  mine term, term load
+    mine text
+      take path
+    mine maybe
+      mine term, term mark
+        mine text
+          take mark

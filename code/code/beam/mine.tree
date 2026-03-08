@@ -1,0 +1,11 @@
+
+mine beam
+  mine term, term beam
+    take name
+    mine list
+      mine form, form beam-body
+        take body
+
+mine beam-body
+  mine any
+    take node

@@ -1,4 +1,7 @@
 
+load @cluesurf/base/code/move
+  find move
+
 mint move
   case name
     slot name

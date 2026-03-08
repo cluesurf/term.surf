@@ -1,0 +1,8 @@
+
+mine deck-host
+  mine term, term host
+    mine text
+      take site
+    mine list
+      mine form, form deck-link
+        take link

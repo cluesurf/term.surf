@@ -1,4 +1,9 @@
 
+load @cluesurf/base/code/test
+  find test
+  find zone
+  find find
+
 mint test
   case name
     slot name

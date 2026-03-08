@@ -1,0 +1,78 @@
+
+# list size          ordered list
+#   flow <item 1>
+#   flow <item 2>
+# list flow          unordered list
+#   flow <item 1>
+# list mesh          table
+#   bind head
+#     flow <col 1>
+#   bind base
+#     make line
+#       flow <cell>
+# list link          table of contents / link list
+#   link ./file.md
+# list turn          tabs
+#   turn <tab name>
+
+mine list
+  mine term, term list
+    take kind
+    mine case
+      mine form, form list-mesh
+        take mesh
+      mine form, form list-link
+        take link
+      mine form, form list-turn
+        take turn
+      mine form, form list-items
+        take items
+
+mine list-items
+  mine list
+    mine form, form flow
+      take flow
+
+mine list-mesh
+  mine maybe
+    mine term, term bind
+      mine term, term head
+        mine list
+          mine form, form flow
+            take head
+  mine maybe
+    mine term, term bind
+      mine term, term base
+        mine list
+          mine form, form list-mesh-line
+            take line
+
+mine list-mesh-line
+  mine term, term make
+    mine term, term line
+      mine list
+        mine form, form flow
+          take cell
+
+mine list-link
+  mine list
+    mine form, form list-link-item
+      take link
+
+mine list-link-item
+  mine term, term link
+    mine text
+      take path
+    mine list
+      mine form, form list-link-item
+        take link
+
+mine list-turn
+  mine list
+    mine form, form list-turn-item
+      take turn
+
+mine list-turn-item
+  mine term, term turn
+    mine text
+      take name

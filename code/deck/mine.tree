@@ -1,0 +1,10 @@
+
+mine deck
+  mine list
+    mine case
+      mine form, form deck
+        take deck
+      mine form, form role
+        take role
+      mine form, form load
+        take load

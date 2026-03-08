@@ -1,0 +1,21 @@
+
+mine tree
+  mine term, term tree
+    take name
+    mine list
+      mine form, form tree-take
+        take take
+    mine maybe
+      mine term, term hook
+        mine term, term fuse
+          mine list
+            mine form, form tree-body
+              take body
+
+mine tree-take
+  mine term, term take
+    take name
+
+mine tree-body
+  mine any
+    take node

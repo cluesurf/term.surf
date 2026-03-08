@@ -24,3 +24,11 @@ mine code
         take suit
       mine form, form tree
         take tree
+      mine form, form kink
+        take kink
+      mine form, form fuse
+        take fuse
+      mine form, form beam
+        take beam
+      mine form, form slot
+        take slot

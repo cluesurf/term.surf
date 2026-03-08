@@ -1,0 +1,20 @@
+
+mine role
+  mine term, term role
+    take name
+    mine list
+      mine form, form role-take
+        take take
+
+mine role-take
+  mine term, term take
+    mine text
+      take glob
+    mine list
+      mine form, form role-miss
+        take miss
+
+mine role-miss
+  mine term, term miss
+    mine text
+      take glob

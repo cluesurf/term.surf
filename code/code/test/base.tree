@@ -1,0 +1,4 @@
+
+mill code-test
+  bind mine, load ./mine
+  bind mint, load ./mint

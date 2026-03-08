@@ -1,0 +1,24 @@
+
+load @cluesurf/base/code/import
+  find import
+  find import-reference
+
+mint load, like deck-load
+  case path
+    slot path
+  case find, mint find
+    slot find
+  hook make
+    make deck-load
+      bind path, read path
+      bind find, read find
+
+mint find, like deck-load-find
+  case text
+    slot name
+  case name
+    slot alias
+  hook make
+    make deck-load-find
+      bind name, read name
+      bind alias, read alias

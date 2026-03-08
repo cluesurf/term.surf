@@ -1,0 +1,4 @@
+
+mill deck-deck-host
+  bind mine, load ./mine
+  bind mint, load ./mint

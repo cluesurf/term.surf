@@ -1,0 +1,23 @@
+
+mine deck-link
+  mine term, term link
+    take name
+    mine maybe
+      mine term, term mark
+        mine text
+          take mark
+    mine maybe
+      mine term, term site
+        mine text
+          take site
+    mine maybe
+      mine term, term base
+        take base
+
+mine deck-term
+  mine term, term term
+    take name
+
+mine deck-deck
+  mine term, term deck
+    take path

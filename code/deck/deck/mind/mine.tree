@@ -1,0 +1,13 @@
+
+mine deck-mind
+  mine term, term mind
+    mine text
+      take name
+    mine maybe
+      mine term, term base
+        mine text
+          take base
+    mine maybe
+      mine term, term site
+        mine text
+          take site

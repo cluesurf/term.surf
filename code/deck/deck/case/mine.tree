@@ -1,0 +1,10 @@
+
+mine deck-case
+  mine term, term case
+    take name
+    mine list
+      mine form, form deck-link
+        take link
+    mine list
+      mine form, form deck-host
+        take host

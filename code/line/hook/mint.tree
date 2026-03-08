@@ -1,0 +1,38 @@
+
+load @cluesurf/base/code/command
+  find line-hook
+  find line-hook-take
+  find line-hook-take-lead
+
+mint hook, like line-hook
+  case name
+    slot name
+  case note
+    slot note
+  case take, mint hook-take
+    slot take
+  case task
+    slot task
+  hook make
+    make line-hook
+      bind name, read name
+      bind note, read note
+      bind take, read take
+      bind task, read task
+
+mint hook-take, like line-hook-take
+  case name
+    slot name
+  case lead, mint hook-take-lead
+    slot lead
+  hook make
+    make line-hook-take
+      bind name, read name
+      bind lead, read lead
+
+mint hook-take-lead, like line-hook-take-lead
+  case flag
+    slot flag
+  hook make
+    make line-hook-take-lead
+      bind flag, read flag

@@ -1,0 +1,8 @@
+
+mint deck
+  case deck, mint deck
+    slot deck
+  case role, mint role
+    slot role
+  case load, mint load
+    slot load

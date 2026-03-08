@@ -1,4 +1,11 @@
 
+load @cluesurf/base/code/sift
+  find sift
+  find link
+  find move
+  find read
+  find loan
+
 mint sift
   case text
     slot value

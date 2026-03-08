@@ -1,0 +1,41 @@
+
+# surf ./path, text <link title>
+# bold <text>
+# tilt <text>
+# line <text>  (strikethrough)
+# rise <text>  (superscript)
+# fall <text>  (subscript)
+
+mine surf
+  mine term, term surf
+    mine text
+      take link
+    mine maybe
+      mine term, term text
+        mine text
+          take title
+
+mine bold
+  mine term, term bold
+    mine text
+      take text
+
+mine tilt
+  mine term, term tilt
+    mine text
+      take text
+
+mine line
+  mine term, term line
+    mine text
+      take text
+
+mine rise
+  mine term, term rise
+    mine text
+      take text
+
+mine fall
+  mine term, term fall
+    mine text
+      take text

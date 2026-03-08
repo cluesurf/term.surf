@@ -1,4 +1,9 @@
 
+load @cluesurf/base/code/lace
+  find lace
+  find walk
+  find test
+
 mint lace
   case name
     slot name

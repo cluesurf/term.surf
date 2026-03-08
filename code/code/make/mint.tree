@@ -1,4 +1,7 @@
 
+load @cluesurf/base/code/make
+  find make
+
 mint make
   case name
     slot name

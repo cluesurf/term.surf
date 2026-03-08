@@ -1,0 +1,35 @@
+
+# hook make
+#   note <Create a new deck repository>
+#   take name
+#   take head
+#     lead <-t>
+#     lead <--title>
+#   task make-deck
+
+mine hook
+  mine term, term hook
+    take name
+    mine maybe
+      mine term, term note
+        mine text
+          take note
+    mine list
+      mine form, form hook-take
+        take take
+    mine maybe
+      mine term, term task
+        mine text
+          take task
+
+mine hook-take
+  mine term, term take
+    take name
+    mine list
+      mine form, form hook-take-lead
+        take lead
+
+mine hook-take-lead
+  mine term, term lead
+    mine text
+      take flag

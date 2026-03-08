@@ -1,0 +1,21 @@
+
+# code javascript, <console.log('hello')>
+# code math
+#   set
+#     sup
+#       i a
+#       n 2
+
+mine code
+  mine term, term code
+    take lang
+    mine case
+      mine text
+        take text
+      mine form, form code-tree
+        take tree
+
+mine code-tree
+  mine list
+    mine term
+      take node

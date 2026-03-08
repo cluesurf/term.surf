@@ -22,3 +22,11 @@ mint code
     slot suit
   case tree, mint tree
     slot tree
+  case kink, mint kink
+    slot kink
+  case fuse, mint fuse
+    slot fuse
+  case beam, mint beam
+    slot beam
+  case slot, mint slot
+    slot slot

@@ -1,4 +1,7 @@
 
+load @cluesurf/base/code/tune
+  find tune
+
 mint tune
   case name
     slot name

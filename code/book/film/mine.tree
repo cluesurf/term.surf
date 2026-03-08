@@ -1,0 +1,16 @@
+
+# film youtube
+#   bind id, <123>
+
+mine film
+  mine term, term film
+    take kind
+    mine list
+      mine form, form film-bind
+        take bind
+
+mine film-bind
+  mine term, term bind
+    take name
+    mine text
+      take value

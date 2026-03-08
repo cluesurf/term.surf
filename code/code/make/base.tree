@@ -1,0 +1,4 @@
+
+mill code-make
+  bind mine, load ./mine
+  bind mint, load ./mint

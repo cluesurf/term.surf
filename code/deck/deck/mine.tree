@@ -1,0 +1,59 @@
+
+mine deck
+  mine term, term deck
+    mine text
+      take name
+    mine maybe
+      mine term, term mark
+        mine text
+          take mark
+    mine maybe
+      mine term, term head
+        mine text
+          take head
+    mine maybe
+      mine term, term lock
+        take lock
+    mine maybe
+      mine term, term sort
+        take sort
+    mine maybe
+      mine term, term site
+        mine text
+          take site
+    mine maybe
+      mine term, term view
+        take view
+    mine maybe
+      mine term, term hide
+        take hide
+    mine maybe
+      mine term, term task
+        take task
+    mine maybe
+      mine term, term book
+        take book
+    mine maybe
+      mine term, term role
+        take role
+    mine maybe
+      mine term, term call
+        take call
+    mine list
+      mine form, form deck-term
+        take term
+    mine list
+      mine form, form deck-mind
+        take mind
+    mine list
+      mine form, form deck-link
+        take link
+    mine list
+      mine form, form deck-host
+        take host
+    mine list
+      mine form, form deck-deck
+        take deck
+    mine list
+      mine form, form deck-case
+        take case
