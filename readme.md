@@ -18,7 +18,7 @@ how `.tree` source is parsed, analyzed, and transformed.
 Each directory under `code/` defines a DSL vocabulary (role).
 
 | role | note |
-| --- |: --- |
+| --- |:--- |
 | `code` | Main programming language terms (task, form, call, fork, walk, etc.) |
 | `form` | Simple struct definitions without methods or tasks |
 | `bind` | Native binding declarations for code generation (form with `name`, task signatures, seed constants) |
