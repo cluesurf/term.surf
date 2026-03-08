@@ -4,7 +4,7 @@ load @cluesurf/term/code/code/seed/mine
 
 mine save
   mine term, term save
-    mine term
+    mine save-path
       slot name
     mine maybe
       mine form, like seed

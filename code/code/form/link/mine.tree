@@ -5,6 +5,9 @@ load @cluesurf/term/code/code/like/mine
 load @cluesurf/term/code/code/seed/mine
   find seed
 
+load @cluesurf/term/code/code/tag/mine
+  find tag
+
 mine link
   mine term, term link
     mine term
@@ -13,8 +16,9 @@ mine link
       mine form, like like
         slot like
     mine maybe
-      mine term, term hide
-        slot hide
+      mine term, term mark
+        mine term, term private
+          slot hide
     mine maybe
       mine term, term need
         slot need
@@ -22,6 +26,9 @@ mine link
       mine term, term base
         mine form, like seed
           slot base
+    mine list
+      mine form, like tag
+        slot tag
     mine list
       mine form, like link-take
         slot take

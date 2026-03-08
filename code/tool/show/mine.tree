@@ -1,0 +1,7 @@
+
+mine tool-show
+  mine term, term show
+    mine text
+      slot name
+    mine text
+      slot text

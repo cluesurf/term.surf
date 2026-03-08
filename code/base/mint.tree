@@ -10,6 +10,16 @@ mint base
     slot move
   case find, mint base-find
     slot find
+  case db-find, mint db-find
+    slot db-find
+  case db-make, mint db-make
+    slot db-make
+  case db-mold, mint db-mold
+    slot db-mold
+  case db-save, mint db-save
+    slot db-save
+  case db-toss, mint db-toss
+    slot db-toss
 
 mint base-move, like base-move
   case name

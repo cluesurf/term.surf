@@ -1,0 +1,118 @@
+
+load @cluesurf/term/code/code/seed/mint
+  find seed
+
+mint tool-take
+  case name
+    slot name
+  case code
+    slot code
+  case like, mint tool-take-like
+    slot like
+  case list, mint tool-take-list
+    slot list
+  case need
+    slot need
+  case base, mint seed
+    slot base
+  case base-term
+    slot base-term
+  case case, mint tool-take-case
+    slot case
+  case mill, mint tool-mill
+    slot mill
+  case seed, mint tool-take-seed
+    slot seed
+  case mark, mint tool-take-mark
+    slot mark
+  hook make
+    make tool-take
+      bind name, read name
+      bind code, read code
+      bind like, read like
+      bind list, read list
+      bind need, read need
+      bind base, read base
+      bind base-term, read base-term
+      bind case, read case
+      bind mill, read mill
+      bind seed, read seed
+      bind mark, read mark
+
+mint tool-take-like
+  case name
+    slot name
+  hook make
+    make tool-take-like
+      bind name, read name
+
+mint tool-take-list
+  case name
+    slot name
+  hook make
+    make tool-take-list
+      bind name, read name
+
+mint tool-take-case
+  case name
+    slot name
+  hook make
+    make tool-take-case
+      bind name, read name
+
+mint tool-take-seed
+  case env, mint tool-take-seed-env
+    slot env
+  case call, mint tool-take-seed-call
+    slot call
+
+mint tool-take-seed-env
+  case name
+    slot name
+  hook make
+    make tool-take-seed-env
+      bind name, read name
+
+mint tool-take-seed-call
+  case call, mint tool-take-seed-call-bind
+    slot call
+  hook make
+    make tool-take-seed-call
+      bind call, read call
+
+mint tool-take-seed-call-bind
+  case name
+    slot name
+  hook make
+    make tool-take-seed-call-bind
+      bind name, read name
+
+mint tool-take-mark
+  case private, mint tool-take-mark-private
+    slot private
+  case deprecated, mint tool-take-mark-deprecated
+    slot deprecated
+  case experimental, mint tool-take-mark-experimental
+    slot experimental
+
+mint tool-take-mark-private
+  hook make
+    make tool-take-mark-private
+
+mint tool-take-mark-deprecated
+  case call, mint tool-take-mark-deprecated-call
+    slot call
+  hook make
+    make tool-take-mark-deprecated
+      bind call, read call
+
+mint tool-take-mark-deprecated-call
+  case name
+    slot name
+  hook make
+    make tool-take-mark-deprecated-call
+      bind name, read name
+
+mint tool-take-mark-experimental
+  hook make
+    make tool-take-mark-experimental

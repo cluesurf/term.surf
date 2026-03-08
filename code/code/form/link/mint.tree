@@ -14,6 +14,8 @@ mint link
     slot need
   case base, mint seed
     slot base
+  case tag, mint tag
+    slot tag
   case take, mint link-take
     slot take
   hook make
@@ -23,6 +25,7 @@ mint link
       bind hide, read hide
       bind need, read need
       bind base, read base
+      bind tag, read tag
       bind take, read take
 
 mint link-take, like link-take

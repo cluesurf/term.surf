@@ -24,10 +24,12 @@ mint form
     slot hold
   case hide
     slot hide
-  case firm
-    slot firm
+  case fold
+    slot fold
   case note, mint note
     slot note
+  case tag, mint tag
+    slot tag
   hook make
     make form
       bind name, read name
@@ -40,8 +42,9 @@ mint form
       bind task, read task
       bind hold, read hold
       bind hide, read hide
-      bind firm, read firm
+      bind fold, read fold
       bind note, read note
+      bind tag, read tag
 
 mint bond
   case name

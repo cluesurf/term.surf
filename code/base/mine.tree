@@ -14,6 +14,21 @@ load @cluesurf/term/code/code/note/mine
 load @cluesurf/term/code/code/seed/mine
   find seed
 
+load @cluesurf/term/code/base/find/mine
+  find db-find
+
+load @cluesurf/term/code/base/db-make/mine
+  find db-make
+
+load @cluesurf/term/code/base/db-mold/mine
+  find db-mold
+
+load @cluesurf/term/code/base/db-save/mine
+  find db-save
+
+load @cluesurf/term/code/base/toss/mine
+  find db-toss
+
 mine base
   mine list
     mine any
@@ -21,6 +36,16 @@ mine base
         slot move
       mine form, like base-find
         slot find
+      mine form, like db-find
+        slot db-find
+      mine form, like db-make
+        slot db-make
+      mine form, like db-mold
+        slot db-mold
+      mine form, like db-save
+        slot db-save
+      mine form, like db-toss
+        slot db-toss
 
 mine base-move
   mine term, term move

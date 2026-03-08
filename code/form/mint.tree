@@ -22,8 +22,8 @@ mint form-def, like form-def
     slot hold
   case hide
     slot hide
-  case firm
-    slot firm
+  case fold
+    slot fold
   case note, mint note
     slot note
   hook make
@@ -35,7 +35,7 @@ mint form-def, like form-def
       bind case, read case
       bind hold, read hold
       bind hide, read hide
-      bind firm, read firm
+      bind fold, read fold
       bind note, read note
 
 mint form-case, like form-case

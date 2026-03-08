@@ -20,11 +20,14 @@ load @cluesurf/term/code/code/hold/mine
 load @cluesurf/term/code/code/hide/mine
   find hide
 
-load @cluesurf/term/code/code/firm/mine
-  find firm
+load @cluesurf/term/code/code/fold/mine
+  find fold
 
 load @cluesurf/term/code/code/note/mine
   find note
+
+load @cluesurf/term/code/code/tag/mine
+  find tag
 
 load @cluesurf/term/code/code/call/mine
   find call
@@ -61,11 +64,14 @@ mine form
       mine form, like hide
         slot hide
     mine maybe
-      mine form, like firm
-        slot firm
+      mine form, like fold
+        slot fold
     mine maybe
       mine form, like note
         slot note
+    mine list
+      mine form, like tag
+        slot tag
 
 mine rein
   mine term, term rein
