@@ -1,19 +1,22 @@
 
 mine sift
   mine case
-    mine text
+    mine form, form text
       take text
-    mine term, term text
-      mine text
-        take text
+    mine form, form mark
+      take mark
+    mine form, form wave
+      take wave
+    mine form, form read
+      take read
     mine form, form link
       take link
     mine form, form move
       take move
-    mine form, form read
-      take read
     mine form, form loan
       take loan
+    mine form, form cite
+      take cite
     mine form, form make
       take make
     mine form, form call
@@ -22,23 +25,44 @@ mine sift
       take task
     mine form, form form
       take form
+    mine form, form meet
+      take meet
+
+mine text
+  mine text
+    take text
+
+mine mark
+  mine term, term mark
+    mine term
+      take value
+
+mine wave
+  mine term, term wave
+    mine term
+      take value
+
+mine read
+  mine term, term read
+    mine path
+      take road
 
 mine link
   mine term, term link
-    mine road
+    mine path
       take road
 
 mine move
   mine term, term move
-    mine road
-      take road
-
-mine read
-  mine term, term read
-    mine road
+    mine path
       take road
 
 mine loan
   mine term, term loan
-    mine road
+    mine path
+      take road
+
+mine cite
+  mine term, term cite
+    mine path
       take road

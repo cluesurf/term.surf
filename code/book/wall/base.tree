@@ -1,4 +1,4 @@
 
-mill book-wall
+mill wall
   bind mine, load ./mine
   bind mint, load ./mint

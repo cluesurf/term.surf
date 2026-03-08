@@ -1,8 +1,4 @@
 
-load @cluesurf/base/code/task
-  find task
-  find head
-
 mint task, like task
   case name
     slot name
@@ -14,6 +10,14 @@ mint task, like task
     slot flow
   case task, mint task
     slot task
+  case like, mint like
+    slot like
+  case wait
+    slot wait
+  case risk
+    slot risk
+  case hide
+    slot hide
   hook make
     make task
       bind name, read name
@@ -21,8 +25,12 @@ mint task, like task
       bind base, read base
       bind flow, read flow
       bind task, read task
+      bind like, read like
+      bind wait, read wait
+      bind risk, read risk
+      bind hide, read hide
 
-mint head, like head
+mint head
   case name
     slot name
   case form, mint form
@@ -55,14 +63,40 @@ mint flow
     slot make
   case save, mint save
     slot save
+  case fork, mint fork
+    slot fork
+  case walk, mint walk
+    slot walk
+  case back, mint back
+    slot back
+  case meet, mint meet
+    slot meet
   case turn, mint turn
     slot turn
+  case next
+    slot next
+  case rest
+    slot rest
   case rein
     slot rein
   case show, mint show
     slot show
+  case dive, mint dive
+    slot dive
+  case hint, mint hint
+    slot hint
+  case tell, mint tell
+    slot tell
+  case bust, mint bust
+    slot bust
   case halt, mint halt
     slot halt
+  case fuse, mint fuse
+    slot fuse
+  case slot, mint slot
+    slot slot
+  case beam, mint beam
+    slot beam
 
 mint show
   case sift, mint sift
@@ -71,12 +105,43 @@ mint show
     make show
       bind sift, read sift
 
+mint dive
+  case sift, mint sift
+    slot sift
+  hook make
+    make dive
+      bind sift, read sift
+
+mint hint
+  case sift, mint sift
+    slot sift
+  hook make
+    make hint
+      bind sift, read sift
+
+mint tell
+  case sift, mint sift
+    slot sift
+  hook make
+    make tell
+      bind sift, read sift
+
+mint bust
+  case sift, mint sift
+    slot sift
+  hook make
+    make bust
+      bind sift, read sift
+
 mint halt
-  case term
-    slot term
+  case mode
+    slot mode
+  case sift, mint sift
+    slot sift
   hook make
     make halt
-      bind term, read term
+      bind mode, read mode
+      bind sift, read sift
 
 mint save
   case name
@@ -100,3 +165,10 @@ mint turn
       bind name, read name
       bind sift, read sift
       bind line, read line
+
+mint back
+  case sift, mint sift
+    slot sift
+  hook make
+    make back
+      bind sift, read sift

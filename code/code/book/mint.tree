@@ -1,0 +1,22 @@
+
+load @cluesurf/base/code/book
+  find book
+
+mint book
+  case name
+    slot name
+  case form, mint form
+    slot form
+  case task, mint task
+    slot task
+  case host, mint host
+    slot host
+  case load, mint load
+    slot load
+  hook make
+    make book
+      bind name, read name
+      bind form, read form
+      bind task, read task
+      bind host, read host
+      bind load, read load

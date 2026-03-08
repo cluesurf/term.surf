@@ -1,4 +1,4 @@
 
-mill book-code
+mill code
   bind mine, load ./mine
   bind mint, load ./mint

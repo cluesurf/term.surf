@@ -1,4 +1,4 @@
 
-mill book-head
+mill head
   bind mine, load ./mine
   bind mint, load ./mint

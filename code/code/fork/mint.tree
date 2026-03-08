@@ -1,0 +1,47 @@
+
+load @cluesurf/base/code/fork
+  find fork
+  find hook
+  find arm
+
+mint fork
+  case mode
+    slot mode
+  case sift, mint sift
+    slot sift
+  case hook, mint hook
+    slot hook
+  case arm, mint arm
+    slot arm
+  hook make
+    make fork
+      bind mode, read mode
+      bind sift, read sift
+      bind hook, read hook
+      bind arm, read arm
+
+mint hook
+  case name
+    slot name
+  case base, mint base
+    slot base
+  case flow, mint flow
+    slot flow
+  hook make
+    make hook
+      bind name, read name
+      bind base, read base
+      bind flow, read flow
+
+mint arm
+  case name
+    slot name
+  case link, mint link
+    slot link
+  case flow, mint flow
+    slot flow
+  hook make
+    make arm
+      bind name, read name
+      bind link, read link
+      bind flow, read flow

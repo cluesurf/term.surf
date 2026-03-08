@@ -1,0 +1,16 @@
+
+load @cluesurf/base/code/link
+  find link
+
+mint link
+  case name
+    slot name
+  case like, mint like
+    slot like
+  case hide
+    slot hide
+  hook make
+    make link
+      bind name, read name
+      bind like, read like
+      bind hide, read hide

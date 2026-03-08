@@ -1,0 +1,14 @@
+mine dock
+  mine term, term dock
+    mine list
+      mine form, form load
+        take load
+
+mine load
+  mine term, term load
+    mine text
+      take path
+    mine maybe
+      mine term, term name
+        mine term
+          take name

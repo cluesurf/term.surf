@@ -1,4 +1,4 @@
 
-mill book-tell
+mill tell
   bind mine, load ./mine
   bind mint, load ./mint

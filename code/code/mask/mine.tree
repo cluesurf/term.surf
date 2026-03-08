@@ -1,0 +1,10 @@
+mine mask
+  mine term, term mask
+    mine term
+      take name
+    mine list
+      mine form, form head
+        take head
+    mine list
+      mine form, form task
+        take task

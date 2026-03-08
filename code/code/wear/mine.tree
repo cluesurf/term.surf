@@ -1,0 +1,7 @@
+mine wear
+  mine term, term wear
+    mine term
+      take name
+    mine list
+      mine form, form task
+        take task

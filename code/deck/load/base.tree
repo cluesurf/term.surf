@@ -1,4 +1,4 @@
 
-mill deck-load
+mill load
   bind mine, load ./mine
   bind mint, load ./mint

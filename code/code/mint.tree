@@ -20,6 +20,14 @@ mint code
     slot hold
   case suit, mint suit
     slot suit
+  case mask, mint mask
+    slot mask
+  case wear, mint wear
+    slot wear
+  case bear, mint bear
+    slot bear
+  case book, mint book
+    slot book
   case tree, mint tree
     slot tree
   case kink, mint kink

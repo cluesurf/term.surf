@@ -1,0 +1,7 @@
+
+mint hint
+  case sift, mint sift
+    slot sift
+  hook make
+    make hint
+      bind sift, read sift
