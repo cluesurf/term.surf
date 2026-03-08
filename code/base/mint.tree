@@ -1,0 +1,64 @@
+
+load @cluesurf/base/code/base
+  find base-move
+  find base-move-next
+  find base-move-back
+  find base-find
+
+mint base
+  case move, mint base-move
+    slot move
+  case find, mint base-find
+    slot find
+
+mint base-move, like base-move
+  case name
+    slot name
+  case next, mint base-move-next
+    slot next
+  case back, mint base-move-back
+    slot back
+  case note, mint note
+    slot note
+  hook make
+    make base-move
+      bind name, read name
+      bind next, read next
+      bind back, read back
+      bind note, read note
+
+mint base-move-next, like base-move-next
+  case step
+    slot step
+  hook make
+    make base-move-next
+      bind step, read step
+
+mint base-move-back, like base-move-back
+  case step
+    slot step
+  hook make
+    make base-move-back
+      bind step, read step
+
+mint base-find, like base-find
+  case name
+    slot name
+  case head, mint head
+    slot head
+  case take, mint take
+    slot take
+  case like, mint like
+    slot like
+  case flow
+    slot flow
+  case note, mint note
+    slot note
+  hook make
+    make base-find
+      bind name, read name
+      bind head, read head
+      bind take, read take
+      bind like, read like
+      bind flow, read flow
+      bind note, read note

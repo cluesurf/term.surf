@@ -2,7 +2,7 @@
 load @cluesurf/term/code/code/head/mine
   find head
 
-load @cluesurf/term/code/code/host/mine
+load @cluesurf/term/code/seed/seed/mine
   find host
 
 mine tune

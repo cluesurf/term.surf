@@ -4,7 +4,7 @@ load @cluesurf/term/code/code/form/mine
 load @cluesurf/term/code/code/task/mine
   find task
 
-load @cluesurf/term/code/code/host/mine
+load @cluesurf/term/code/seed/seed/mine
   find host
 
 load @cluesurf/term/code/code/load/mine

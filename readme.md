@@ -13,13 +13,35 @@ term.tree contains the DSL definitions for the Seed language's parsing
 and compilation system. It provides the declarative grammars that drive
 how `.tree` source is parsed, analyzed, and transformed.
 
+### DSL Roles
+
+Each directory under `code/` defines a DSL vocabulary (role).
+
+| Role | Path | Description |
+| --- | --- | --- |
+| `code` | `code/code/` | Main programming language terms (task, form, call, fork, walk, etc.) |
+| `form` | `code/form/` | Simple struct definitions without methods or tasks |
+| `bind` | `code/bind/` | Native binding declarations for code generation (form with `name`, task signatures, seed constants) |
+| `mill` | `code/mill/` | Parser grammar definitions (mine, mint, mill) |
+| `seed` | `code/seed/` | Configuration and settings (key-value constants) |
+| `view` | `code/view/` | UI component definitions |
+| `tune` | `code/tune/` | Audio processing definitions |
+| `flow` | `code/flow/` | Animation and transition definitions |
+| `host` | `code/host/` | Server route definitions (extends code with route hooks and port bindings) |
+| `line` | `code/line/` | CLI command definitions (extends code with argument handling) |
+| `base` | `code/base/` | Database definitions (migrations with move next/back, queries with find) |
+| `book` | `code/book/` | Text content markup that generates to HTML, Markdown, or LaTeX |
+| `deck` | `code/deck/` | Package manifest definitions (name, version, dependencies, etc.) |
+| `lock` | `code/lock/` | Lockfile definitions (resolved dependency graph) |
+| `text` | `code/text/` | Internationalization string definitions (text term, string pairs) |
+
 ### Mill/Mine/Mint System
 
 The core DSL is the **mill** system, which has three layers:
 
 - **mill** declares a combined parser/builder processor
 - **mine** (parser) matches patterns in the input and emits named nodes
-  via `take`
+  via `slot`
 - **mint** (builder) observes mine events via `case`, stores values in
   `slot`, and constructs typed AST nodes in `hook make`
 

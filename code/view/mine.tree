@@ -1,0 +1,125 @@
+
+load @cluesurf/term/code/code/head/mine
+  find head
+
+load @cluesurf/term/code/code/take/mine
+  find take
+
+load @cluesurf/term/code/code/like/mine
+  find like
+
+load @cluesurf/term/code/code/note/mine
+  find note
+
+load @cluesurf/term/code/code/seed/mine
+  find seed
+
+mine view
+  mine list
+    mine form, like view-def
+      slot view
+
+mine view-def
+  mine term, term view
+    mine term
+      slot name
+    mine list
+      mine form, like head
+        slot head
+    mine list
+      mine form, like take
+        slot take
+    mine maybe
+      mine form, like like
+        slot like
+    mine list
+      mine form, like view-child
+        slot child
+    mine maybe
+      mine form, like note
+        slot note
+
+mine view-child
+  mine any
+    mine form, like view-node
+      slot node
+    mine form, like view-text
+      slot text
+    mine form, like view-slot
+      slot slot
+    mine form, like view-fork
+      slot fork
+    mine form, like view-walk
+      slot walk
+
+mine view-node
+  mine term
+    slot name
+    mine list
+      mine form, like view-bind
+        slot bind
+    mine list
+      mine form, like view-child
+        slot child
+
+mine view-bind
+  mine term, term bind
+    mine term
+      slot name
+    mine form, like seed
+      slot seed
+
+mine view-text
+  mine text
+    slot text
+
+mine view-slot
+  mine term, term slot
+    mine term
+      slot name
+
+mine view-fork
+  mine term, term fork
+    mine term, term test
+    mine list
+      mine form, like view-fork-hook
+        slot hook
+
+mine view-fork-hook
+  mine any
+    mine form, like view-fork-test
+      slot test
+    mine form, like view-fork-hold
+      slot hold
+    mine form, like view-fork-miss
+      slot miss
+
+mine view-fork-test
+  mine term, term hook
+    mine term, term test
+    mine list
+      mine form, like view-child
+        slot child
+
+mine view-fork-hold
+  mine term, term hook
+    mine term, term hold
+    mine list
+      mine form, like view-child
+        slot child
+
+mine view-fork-miss
+  mine term, term hook
+    mine term, term miss
+    mine list
+      mine form, like view-child
+        slot child
+
+mine view-walk
+  mine term, term walk
+    mine term, term list
+    mine form, like seed
+      slot seed
+    mine list
+      mine form, like view-child
+        slot child
