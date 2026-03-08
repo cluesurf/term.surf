@@ -1,128 +1,179 @@
 
+load @cluesurf/term/code/code/head/mine
+  find head
+
+load @cluesurf/term/code/code/take/mine
+  find take
+
+load @cluesurf/term/code/code/like/mine
+  find like
+
+load @cluesurf/term/code/code/call/mine
+  find call
+
+load @cluesurf/term/code/code/make/mine
+  find make
+
+load @cluesurf/term/code/code/fork/mine
+  find fork
+
+load @cluesurf/term/code/code/walk/mine
+  find walk
+
+load @cluesurf/term/code/code/meet/mine
+  find meet
+
+load @cluesurf/term/code/code/fuse/mine
+  find fuse
+
+load @cluesurf/term/code/code/beam/mine
+  find beam
+
+load @cluesurf/term/code/code/slot/mine
+  find slot
+
+load @cluesurf/term/code/code/seed/mine
+  find seed
+
+load @cluesurf/term/code/code/bind/mine
+  find bind
+
+load @cluesurf/term/code/code/firm/mine
+  find firm
+
+load @cluesurf/term/code/code/note/mine
+  find note
+
 mine task
   mine term, term task
     mine term
-      take name
+      slot name
     mine list
-      mine form, form head
-        take head
+      mine form, like head
+        slot head
     mine list
-      mine form, form base
-        take base
+      mine form, like take
+        slot take
     mine list
-      mine form, form flow
-        take flow
+      mine form, like flow
+        slot flow
     mine list
-      mine form, form task
-        take task
+      mine form, like task
+        slot task
     mine maybe
-      mine form, form like
-        take like
+      mine form, like like
+        slot like
     mine maybe
-      mine form, form wait
-        take wait
+      mine form, like wait
+        slot wait
     mine maybe
-      mine form, form risk
-        take risk
+      mine form, like risk
+        slot risk
     mine maybe
-      mine form, form hide
-        take hide
+      mine form, like hide
+        slot hide
+    mine maybe
+      mine form, like firm
+        slot firm
+    mine maybe
+      mine form, like note
+        slot note
 
 mine flow
   mine case
-    mine form, form call
-      take call
-    mine form, form make
-      take make
-    mine form, form save
-      take save
-    mine form, form fork
-      take fork
-    mine form, form walk
-      take walk
-    mine form, form back
-      take back
-    mine form, form meet
-      take meet
-    mine form, form turn
-      take turn
-    mine form, form next
-      take next
-    mine form, form rest
-      take rest
-    mine form, form rein
-      take rein
-    mine form, form show
-      take show
-    mine form, form dive
-      take dive
-    mine form, form hint
-      take hint
-    mine form, form tell
-      take tell
-    mine form, form bust
-      take bust
-    mine form, form halt
-      take halt
-    mine form, form fuse
-      take fuse
-    mine form, form slot
-      take slot
-    mine form, form beam
-      take beam
+    mine form, like call
+      slot call
+    mine form, like make
+      slot make
+    mine form, like save
+      slot save
+    mine form, like fork
+      slot fork
+    mine form, like walk
+      slot walk
+    mine form, like back
+      slot back
+    mine form, like meet
+      slot meet
+    mine form, like turn
+      slot turn
+    mine form, like next
+      slot next
+    mine form, like rest
+      slot rest
+    mine form, like rein
+      slot rein
+    mine form, like show
+      slot show
+    mine form, like dive
+      slot dive
+    mine form, like hint
+      slot hint
+    mine form, like tell
+      slot tell
+    mine form, like bust
+      slot bust
+    mine form, like halt
+      slot halt
+    mine form, like fuse
+      slot fuse
+    mine form, like slot
+      slot slot
+    mine form, like beam
+      slot beam
 
 mine show
   mine term, term show
-    mine form, form sift
-      take sift
+    mine form, like seed
+      slot seed
 
 mine dive
   mine term, term dive
-    mine form, form sift
-      take sift
+    mine form, like seed
+      slot seed
 
 mine hint
   mine term, term hint
-    mine form, form sift
-      take sift
+    mine form, like seed
+      slot seed
 
 mine tell
   mine term, term tell
-    mine form, form sift
-      take sift
+    mine form, like seed
+      slot seed
 
 mine bust
   mine term, term bust
-    mine form, form sift
-      take sift
+    mine form, like seed
+      slot seed
 
 mine halt
   mine term, term halt
     mine maybe
       mine term
-        take mode
+        slot mode
     mine maybe
-      mine form, form sift
-        take sift
+      mine form, like seed
+        slot seed
 
 mine save
   mine term, term save
     mine term
-      take name
+      slot name
     mine maybe
-      mine form, form sift
-        take sift
+      mine form, like seed
+        slot seed
 
 mine turn
   mine term, term turn
     mine term
-      take name
+      slot name
     mine maybe
-      mine form, form sift
-        take sift
+      mine form, like seed
+        slot seed
     mine maybe
-      mine form, form line
-        take line
+      mine form, like line
+        slot line
 
 mine next
   mine term, term next
@@ -134,20 +185,20 @@ mine back
   mine term, term send
     mine term, term back
     mine maybe
-      mine form, form sift
-        take sift
+      mine form, like seed
+        slot seed
 
 mine wait
   mine term, term wait
     mine term
-      take value
+      slot value
 
 mine risk
   mine term, term risk
     mine term
-      take value
+      slot value
 
 mine hide
   mine term, term hide
     mine term
-      take value
+      slot value

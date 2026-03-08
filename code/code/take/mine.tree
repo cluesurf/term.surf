@@ -1,0 +1,24 @@
+
+load @cluesurf/term/code/code/like/mine
+  find like
+
+load @cluesurf/term/code/code/name/mine
+  find name
+
+load @cluesurf/term/code/code/seed/mine
+  find seed
+
+mine take
+  mine term, term take
+    mine term
+      slot name
+    mine maybe
+      mine form, like like
+        slot like
+    mine maybe
+      mine form, like name
+        slot alias
+    mine maybe
+      mine term, term base
+        mine form, like seed
+          slot base

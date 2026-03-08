@@ -1,10 +1,10 @@
 
 mine deck-case
   mine term, term case
-    take name
+    slot name
     mine list
-      mine form, form deck-link
-        take link
+      mine form, like deck-link
+        slot link
     mine list
-      mine form, form deck-host
-        take host
+      mine form, like deck-host
+        slot host

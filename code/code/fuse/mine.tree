@@ -1,13 +1,13 @@
 
 mine fuse
   mine term, term fuse
-    take name
+    slot name
     mine list
-      mine form, form fuse-bind
-        take bind
+      mine form, like fuse-bind
+        slot bind
 
 mine fuse-bind
   mine term, term bind
-    take name
+    slot name
     mine any
-      take value
+      slot value

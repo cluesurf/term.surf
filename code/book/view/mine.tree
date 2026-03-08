@@ -5,13 +5,13 @@
 mine view
   mine term, term view
     mine text
-      take path
+      slot path
     mine maybe
       mine term, term name
         mine text
-          take name
+          slot name
 
 mine draw
   mine term, term draw
     mine text
-      take name
+      slot name

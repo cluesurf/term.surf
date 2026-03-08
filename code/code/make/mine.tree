@@ -1,14 +1,23 @@
 
+load @cluesurf/term/code/code/bind/mine
+  find bind
+
+load @cluesurf/term/code/code/save/mine
+  find save
+
+load @cluesurf/term/code/code/turn/mine
+  find turn
+
 mine make
   mine term, term make
     mine term
-      take name
+      slot name
     mine list
-      mine form, form bind
-        take bind
+      mine form, like bind
+        slot bind
     mine maybe
       mine case
-        mine form, form save
-          take save
-        mine form, form turn
-          take turn
+        mine form, like save
+          slot save
+        mine form, like turn
+          slot turn

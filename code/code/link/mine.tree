@@ -1,11 +1,14 @@
 
+load @cluesurf/term/code/code/like/mine
+  find like
+
 mine link
   mine term, term link
     mine term
-      take name
+      slot name
     mine maybe
-      mine form, form like
-        take like
+      mine form, like like
+        slot like
     mine maybe
       mine term, term hide
-        take hide
+        slot hide

@@ -3,8 +3,8 @@ load @cluesurf/base/code/hold
   find hold
 
 mint hold
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   hook make
     make hold
-      bind sift, read sift
+      bind seed, read seed

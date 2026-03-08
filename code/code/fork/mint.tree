@@ -7,8 +7,8 @@ load @cluesurf/base/code/fork
 mint fork
   case mode
     slot mode
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   case hook, mint hook
     slot hook
   case arm, mint arm
@@ -16,7 +16,7 @@ mint fork
   hook make
     make fork
       bind mode, read mode
-      bind sift, read sift
+      bind seed, read seed
       bind hook, read hook
       bind arm, read arm
 

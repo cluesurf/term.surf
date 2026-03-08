@@ -2,20 +2,20 @@
 mine link
   mine term, term link
     mine text
-      take name
+      slot name
     mine maybe
       mine term, term hash
         mine text
-          take hash
+          slot hash
     mine list
-      mine form, form link-load
-        take load
+      mine form, like link-load
+        slot load
 
 mine link-load
   mine term, term load
     mine text
-      take path
+      slot path
     mine maybe
       mine term, term mark
         mine text
-          take mark
+          slot mark

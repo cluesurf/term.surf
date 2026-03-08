@@ -2,7 +2,7 @@
 mine deck-host
   mine term, term host
     mine text
-      take site
+      slot site
     mine list
-      mine form, form deck-link
-        take link
+      mine form, like deck-link
+        slot link

@@ -4,8 +4,8 @@ mint task, like task
     slot name
   case head, mint head
     slot head
-  case base, mint base
-    slot base
+  case take, mint take
+    slot take
   case flow, mint flow
     slot flow
   case task, mint task
@@ -18,17 +18,23 @@ mint task, like task
     slot risk
   case hide
     slot hide
+  case firm
+    slot firm
+  case note, mint note
+    slot note
   hook make
     make task
       bind name, read name
       bind head, read head
-      bind base, read base
+      bind take, read take
       bind flow, read flow
       bind task, read task
       bind like, read like
       bind wait, read wait
       bind risk, read risk
       bind hide, read hide
+      bind firm, read firm
+      bind note, read note
 
 mint head
   case name
@@ -43,18 +49,18 @@ mint head
       bind head-form, read form
       bind fall, read fall
 
-mint base
+mint take
   case name
     slot name
-  case form, mint form
-    slot form
-  case fall
-    slot fall
+  case like, mint like
+    slot like
+  case base, mint seed
+    slot base
   hook make
-    make base
+    make take
       bind name, read name
-      bind link-form, read form
-      bind fall, read fall
+      bind like, read like
+      bind base, read base
 
 mint flow
   case call, mint call
@@ -99,76 +105,76 @@ mint flow
     slot beam
 
 mint show
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   hook make
     make show
-      bind sift, read sift
+      bind seed, read seed
 
 mint dive
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   hook make
     make dive
-      bind sift, read sift
+      bind seed, read seed
 
 mint hint
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   hook make
     make hint
-      bind sift, read sift
+      bind seed, read seed
 
 mint tell
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   hook make
     make tell
-      bind sift, read sift
+      bind seed, read seed
 
 mint bust
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   hook make
     make bust
-      bind sift, read sift
+      bind seed, read seed
 
 mint halt
   case mode
     slot mode
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   hook make
     make halt
       bind mode, read mode
-      bind sift, read sift
+      bind seed, read seed
 
 mint save
   case name
     slot name
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   hook make
     make save
       bind name, read name
-      bind sift, read sift
+      bind seed, read seed
 
 mint turn
   case name
     slot name
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   case line
     slot line
   hook make
     make turn
       bind name, read name
-      bind sift, read sift
+      bind seed, read seed
       bind line, read line
 
 mint back
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   hook make
     make back
-      bind sift, read sift
+      bind seed, read seed

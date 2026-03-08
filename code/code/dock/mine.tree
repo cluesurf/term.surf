@@ -1,14 +1,17 @@
+load @cluesurf/term/code/code/load/mine
+  find load
+
 mine dock
   mine term, term dock
     mine list
-      mine form, form load
-        take load
+      mine form, like load
+        slot load
 
 mine load
   mine term, term load
     mine text
-      take path
+      slot path
     mine maybe
       mine term, term name
         mine term
-          take name
+          slot name

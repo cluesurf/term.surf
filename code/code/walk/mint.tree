@@ -6,8 +6,8 @@ load @cluesurf/base/code/walk
 mint walk
   case mode
     slot mode
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   case bind, mint bind
     slot bind
   case hook, mint hook
@@ -15,7 +15,7 @@ mint walk
   hook make
     make walk
       bind mode, read mode
-      bind sift, read sift
+      bind seed, read seed
       bind bind, read bind
       bind hook, read hook
 

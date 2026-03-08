@@ -17,62 +17,62 @@
 
 mine list
   mine term, term list
-    take kind
+    slot kind
     mine case
-      mine form, form list-mesh
-        take mesh
-      mine form, form list-link
-        take link
-      mine form, form list-turn
-        take turn
-      mine form, form list-items
-        take items
+      mine form, like list-mesh
+        slot mesh
+      mine form, like list-link
+        slot link
+      mine form, like list-turn
+        slot turn
+      mine form, like list-items
+        slot items
 
 mine list-items
   mine list
-    mine form, form flow
-      take flow
+    mine form, like flow
+      slot flow
 
 mine list-mesh
   mine maybe
     mine term, term bind
       mine term, term head
         mine list
-          mine form, form flow
-            take head
+          mine form, like flow
+            slot head
   mine maybe
     mine term, term bind
       mine term, term base
         mine list
-          mine form, form list-mesh-line
-            take line
+          mine form, like list-mesh-line
+            slot line
 
 mine list-mesh-line
   mine term, term make
     mine term, term line
       mine list
-        mine form, form flow
-          take cell
+        mine form, like flow
+          slot cell
 
 mine list-link
   mine list
-    mine form, form list-link-item
-      take link
+    mine form, like list-link-item
+      slot link
 
 mine list-link-item
   mine term, term link
     mine text
-      take path
+      slot path
     mine list
-      mine form, form list-link-item
-        take link
+      mine form, like list-link-item
+        slot link
 
 mine list-turn
   mine list
-    mine form, form list-turn-item
-      take turn
+    mine form, like list-turn-item
+      slot turn
 
 mine list-turn-item
   mine term, term turn
     mine text
-      take name
+      slot name

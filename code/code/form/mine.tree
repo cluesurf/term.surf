@@ -1,37 +1,85 @@
 
+load @cluesurf/term/code/code/head/mine
+  find head
+
+load @cluesurf/term/code/code/like/mine
+  find like
+
+load @cluesurf/term/code/code/link/mine
+  find link
+
+load @cluesurf/term/code/code/case/mine
+  find case
+
+load @cluesurf/term/code/code/task/mine
+  find task
+
+load @cluesurf/term/code/code/hold/mine
+  find hold
+
+load @cluesurf/term/code/code/hide/mine
+  find hide
+
+load @cluesurf/term/code/code/firm/mine
+  find firm
+
+load @cluesurf/term/code/code/note/mine
+  find note
+
+load @cluesurf/term/code/code/call/mine
+  find call
+
 mine form
   mine term, term form
     mine term
-      take name
+      slot name
     mine list
-      mine form, form head
-        take head
+      mine form, like head
+        slot head
+    mine maybe
+      mine form, like like
+        slot like
     mine list
-      mine form, form link
-        take link
+      mine form, like link
+        slot link
     mine list
-      mine form, form bond
-        take bond
+      mine form, like case
+        slot case
     mine list
-      mine form, form rein
-        take rein
+      mine form, like bond
+        slot bond
     mine list
-      mine form, form task
-        take task
+      mine form, like rein
+        slot rein
+    mine list
+      mine form, like task
+        slot task
+    mine maybe
+      mine form, like hold
+        slot hold
+    mine maybe
+      mine form, like hide
+        slot hide
+    mine maybe
+      mine form, like firm
+        slot firm
+    mine maybe
+      mine form, like note
+        slot note
 
 mine rein
   mine term, term rein
     mine term
-      take task
+      slot task
 
 mine bond
   mine term, term bond
     mine term
-      take name
+      slot name
     mine maybe
       mine term, term line
         mine term
-          take line
+          slot line
     mine list
-      mine form, form call
-        take call
+      mine form, like call
+        slot call

@@ -1,10 +1,13 @@
+load @cluesurf/term/code/code/seed/mine
+  find seed
+
 mine meet
   mine term, term meet
     mine term
-      take mode
+      slot mode
     mine list
-      mine form, form sift
-        take sift
+      mine form, like seed
+        slot seed
     mine list
-      mine form, form meet
-        take meet
+      mine form, like meet
+        slot meet

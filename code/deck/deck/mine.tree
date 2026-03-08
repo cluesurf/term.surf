@@ -2,58 +2,58 @@
 mine deck
   mine term, term deck
     mine text
-      take name
+      slot name
     mine maybe
       mine term, term mark
         mine text
-          take mark
+          slot mark
     mine maybe
       mine term, term head
         mine text
-          take head
+          slot head
     mine maybe
       mine term, term lock
-        take lock
+        slot lock
     mine maybe
       mine term, term sort
-        take sort
+        slot sort
     mine maybe
       mine term, term site
         mine text
-          take site
+          slot site
     mine maybe
       mine term, term view
-        take view
+        slot view
     mine maybe
       mine term, term hide
-        take hide
+        slot hide
     mine maybe
       mine term, term task
-        take task
+        slot task
     mine maybe
       mine term, term book
-        take book
+        slot book
     mine maybe
       mine term, term role
-        take role
+        slot role
     mine maybe
       mine term, term call
-        take call
+        slot call
     mine list
-      mine form, form deck-term
-        take term
+      mine form, like deck-term
+        slot term
     mine list
-      mine form, form deck-mind
-        take mind
+      mine form, like deck-mind
+        slot mind
     mine list
-      mine form, form deck-link
-        take link
+      mine form, like deck-link
+        slot link
     mine list
-      mine form, form deck-host
-        take host
+      mine form, like deck-host
+        slot host
     mine list
-      mine form, form deck-deck
-        take deck
+      mine form, like deck-deck
+        slot deck
     mine list
-      mine form, form deck-case
-        take case
+      mine form, like deck-case
+        slot case

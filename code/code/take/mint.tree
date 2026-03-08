@@ -1,0 +1,16 @@
+
+mint take
+  case name
+    slot name
+  case like, mint like
+    slot like
+  case alias
+    slot alias
+  case base, mint seed
+    slot base
+  hook make
+    make take
+      bind name, read name
+      bind like, read like
+      bind alias, read alias
+      bind base, read base

@@ -1,5 +1,8 @@
 
+load @cluesurf/term/code/code/seed/mine
+  find seed
+
 mine show
   mine term, term show
-    mine form, form sift
-      take sift
+    mine form, like seed
+      slot seed

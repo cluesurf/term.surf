@@ -5,7 +5,7 @@ load @cluesurf/base/code/bind
 mint bind, like bind
   case name
     slot term
-  case sift, mint sift
+  case seed, mint seed
     slot bond
   hook make
     make bind

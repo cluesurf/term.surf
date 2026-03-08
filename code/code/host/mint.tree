@@ -5,9 +5,9 @@ load @cluesurf/base/code/host
 mint host, like host
   case name
     slot name
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   hook make
     make host
       bind name, read name
-      bind sift, read sift
+      bind seed, read seed

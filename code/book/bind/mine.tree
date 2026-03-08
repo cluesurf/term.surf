@@ -10,40 +10,40 @@
 
 mine bind
   mine term, term bind
-    take kind
+    slot kind
     mine list
-      mine case
-        mine form, form bind-mind
-          take mind
-        mine form, form bind-cite
-          take cite
+      mine any
+        mine form, like bind-mind
+          slot mind
+        mine form, like bind-cite
+          slot cite
 
 mine bind-mind
   mine term, term mind
     mine text
-      take key
+      slot key
     mine maybe
       mine term, term name
         mine text
-          take name
+          slot name
 
 mine bind-cite
   mine term, term cite
     mine text
-      take key
+      slot key
     mine maybe
       mine term, term date
         mine text
-          take date
+          slot date
     mine maybe
       mine term, term name
         mine text
-          take name
+          slot name
     mine maybe
       mine term, term site
         mine text
-          take site
+          slot site
     mine maybe
       mine term, term mind
         mine text
-          take mind
+          slot mind

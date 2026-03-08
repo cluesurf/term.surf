@@ -15,3 +15,5 @@ mint make
     make make
       bind name, read name
       bind bind, read bind
+      bind save, read save
+      bind turn, read turn

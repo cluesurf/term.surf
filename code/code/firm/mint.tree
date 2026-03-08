@@ -1,0 +1,7 @@
+
+mint firm
+  case value
+    slot value
+  hook make
+    make firm
+      bind value, read value

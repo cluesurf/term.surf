@@ -1,0 +1,7 @@
+
+mint mesh
+  case name
+    slot name
+  hook make
+    make mesh
+      bind name, read name

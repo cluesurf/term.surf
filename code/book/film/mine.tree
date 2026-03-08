@@ -4,13 +4,13 @@
 
 mine film
   mine term, term film
-    take kind
+    slot kind
     mine list
-      mine form, form film-bind
-        take bind
+      mine form, like film-bind
+        slot bind
 
 mine film-bind
   mine term, term bind
-    take name
+    slot name
     mine text
-      take value
+      slot value

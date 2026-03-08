@@ -1,36 +1,39 @@
+load @cluesurf/term/code/code/seed/mine
+  find seed
+
 mine fork
   mine term, term fork
     mine maybe
       mine term
-        take mode
+        slot mode
     mine maybe
-      mine form, form sift
-        take sift
+      mine form, like seed
+        slot seed
     mine list
-      mine form, form hook
-        take hook
+      mine form, like hook
+        slot hook
     mine list
-      mine form, form arm
-        take arm
+      mine form, like arm
+        slot arm
 
 mine hook
   mine term, term hook
     mine term
-      take name
+      slot name
     mine list
-      mine form, form base
-        take base
+      mine form, like base
+        slot base
     mine list
-      mine form, form flow
-        take flow
+      mine form, like flow
+        slot flow
 
 mine arm
   mine term, term case
     mine term
-      take name
+      slot name
     mine list
-      mine form, form link
-        take link
+      mine form, like link
+        slot link
     mine list
-      mine form, form flow
-        take flow
+      mine form, like flow
+        slot flow

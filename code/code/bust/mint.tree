@@ -1,7 +1,7 @@
 
 mint bust
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   hook make
     make bust
-      bind sift, read sift
+      bind seed, read seed

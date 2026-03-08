@@ -2,72 +2,72 @@
 mine base
   mine term, term base
     mine term
-      take name
+      slot name
     mine maybe
-      mine case
-        mine form, form list
-          take list
-        mine form, form draw
-          take draw
-        mine form, form form
-          take form
-        mine form, form take
-          take take
+      mine any
+        mine form, like list
+          slot list
+        mine form, like draw
+          slot draw
+        mine form, like form
+          slot form
+        mine form, like take
+          slot take
     mine maybe
-      mine form, form free
-        take free
+      mine form, like free
+        slot free
     mine maybe
-      mine form, form fall
-        take fall
+      mine form, like fall
+        slot fall
 
 mine head
   mine term, term head
     mine term
-      take name
+      slot name
     mine maybe
-      mine case
-        mine form, form list
-          take list
-        mine form, form draw
-          take draw
-        mine form, form form
-          take form
-        mine form, form take
-          take take
+      mine any
+        mine form, like list
+          slot list
+        mine form, like draw
+          slot draw
+        mine form, like form
+          slot form
+        mine form, like take
+          slot take
     mine maybe
-      mine form, form free
-        take free
+      mine form, like free
+        slot free
     mine maybe
-      mine form, form fall
-        take fall
+      mine form, like fall
+        slot fall
 
 mine host
   mine term, term host
     mine term
-      take name
+      slot name
     mine maybe
-      mine case
-        mine form, form list
-          take list
-        mine form, form draw
-          take draw
-        mine form, form form
-          take form
+      mine any
+        mine form, like list
+          slot list
+        mine form, like draw
+          slot draw
+        mine form, like form
+          slot form
     mine maybe
-      mine form, form fall
-        take fall
+      mine form, like fall
+        slot fall
 
 mine list
   mine term, term list
     mine term
-      take form
+      slot form
 
 mine draw
   mine term, term draw
     mine term
-      take form
+      slot form
 
 mine free
   mine term, term free
     mine term
-      take term
+      slot term

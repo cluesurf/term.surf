@@ -2,28 +2,28 @@
 mine test
   mine term, term test
     mine term
-      take name
+      slot name
     mine list
-      mine form, form zone
-        take zone
+      mine form, like zone
+        slot zone
 
 mine zone
-  mine case
-    mine form, form call
-      take call
-    mine form, form find
-      take find
+  mine any
+    mine form, like call
+      slot call
+    mine form, like find
+      slot find
 
 mine find
   mine term, term find
     mine term
-      take name
+      slot name
     mine list
-      mine form, form bind
-        take bind
+      mine form, like bind
+        slot bind
     mine list
-      mine form, form flow
-        take flow
+      mine form, like flow
+        slot flow
     mine list
-      mine form, form hook
-        take hook
+      mine form, like hook
+        slot hook

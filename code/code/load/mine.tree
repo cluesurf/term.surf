@@ -1,17 +1,17 @@
 
 mine load
   mine term, term load
-    mine text
-      take path
+    mine path
+      slot path
     mine list
-      mine form, form find
-        take find
+      mine form, like find
+        slot find
 
 mine find
   mine term, term find
     mine term
-      take text
+      slot text
     mine maybe
       mine term, term name
         mine term
-          take name
+          slot name

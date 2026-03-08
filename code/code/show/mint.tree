@@ -1,7 +1,7 @@
 
 mint show
-  case sift, mint sift
-    slot sift
+  case seed, mint seed
+    slot seed
   hook make
     make show
-      bind sift, read sift
+      bind seed, read seed

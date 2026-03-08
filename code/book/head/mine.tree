@@ -4,6 +4,6 @@
 
 mine head
   mine term, term head
-    take level
+    slot level
     mine text
-      take title
+      slot title

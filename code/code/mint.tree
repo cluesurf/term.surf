@@ -38,3 +38,19 @@ mint code
     slot beam
   case slot, mint slot
     slot slot
+  case note, mint note
+    slot note
+  case halt, mint halt
+    slot halt
+  case save, mint save
+    slot save
+  case seed, mint seed
+    slot seed
+  case lace, mint lace
+    slot lace
+  case cast, mint cast
+    slot cast
+  case tune, mint tune
+    slot tune
+  case view, mint view
+    slot view

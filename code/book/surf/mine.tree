@@ -9,33 +9,33 @@
 mine surf
   mine term, term surf
     mine text
-      take link
+      slot link
     mine maybe
       mine term, term text
         mine text
-          take title
+          slot title
 
 mine bold
   mine term, term bold
     mine text
-      take text
+      slot text
 
 mine tilt
   mine term, term tilt
     mine text
-      take text
+      slot text
 
 mine line
   mine term, term line
     mine text
-      take text
+      slot text
 
 mine rise
   mine term, term rise
     mine text
-      take text
+      slot text
 
 mine fall
   mine term, term fall
     mine text
-      take text
+      slot text

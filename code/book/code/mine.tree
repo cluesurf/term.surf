@@ -8,14 +8,14 @@
 
 mine code
   mine term, term code
-    take lang
+    slot lang
     mine case
       mine text
-        take text
-      mine form, form code-tree
-        take tree
+        slot text
+      mine form, like code-tree
+        slot tree
 
 mine code-tree
   mine list
     mine term
-      take node
+      slot node

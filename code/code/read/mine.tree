@@ -2,4 +2,4 @@
 mine read
   mine term, term read
     mine term
-      take name
+      slot name

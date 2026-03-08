@@ -1,21 +1,21 @@
 
 mine tree
   mine term, term tree
-    take name
+    slot name
     mine list
-      mine form, form tree-take
-        take take
+      mine form, like tree-take
+        slot take
     mine maybe
       mine term, term hook
         mine term, term fuse
           mine list
-            mine form, form tree-body
-              take body
+            mine form, like tree-body
+              slot body
 
 mine tree-take
   mine term, term take
-    take name
+    slot name
 
 mine tree-body
   mine any
-    take node
+    slot node
