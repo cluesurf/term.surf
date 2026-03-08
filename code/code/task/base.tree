@@ -1,4 +1,4 @@
 
-mill code-task
+mill task
   bind mine, load ./mine
   bind mint, load ./mint

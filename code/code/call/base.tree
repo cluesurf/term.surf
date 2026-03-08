@@ -1,4 +1,4 @@
 
-mill code-call
+mill call
   bind mine, load ./mine
   bind mint, load ./mint

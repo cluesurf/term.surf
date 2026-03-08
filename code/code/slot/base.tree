@@ -1,4 +1,4 @@
 
-mill code-slot
+mill slot
   bind mine, load ./mine
   bind mint, load ./mint

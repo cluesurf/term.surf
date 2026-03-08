@@ -1,4 +1,4 @@
 
-mill code-move
+mill move
   bind mine, load ./mine
   bind mint, load ./mint

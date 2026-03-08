@@ -1,4 +1,4 @@
 
-mill code-beam
+mill beam
   bind mine, load ./mine
   bind mint, load ./mint
