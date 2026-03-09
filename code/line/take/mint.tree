@@ -2,14 +2,14 @@
 load @cluesurf/term/code/code/seed/mint
   find seed
 
-mint tool-take
+mint dock-take
   case name
     slot name
   case code
     slot code
-  case like, mint tool-take-like
+  case like, mint dock-take-like
     slot like
-  case list, mint tool-take-list
+  case list, mint dock-take-list
     slot list
   case need
     slot need
@@ -17,16 +17,16 @@ mint tool-take
     slot base
   case base-term
     slot base-term
-  case case, mint tool-take-case
+  case case, mint dock-take-case
     slot case
-  case mill, mint tool-mill
+  case mill, mint dock-mill
     slot mill
-  case seed, mint tool-take-seed
+  case seed, mint dock-take-seed
     slot seed
-  case mark, mint tool-take-mark
+  case mark, mint dock-take-mark
     slot mark
   hook make
-    make tool-take
+    make dock-take
       bind name, read name
       bind code, read code
       bind like, read like
@@ -39,80 +39,80 @@ mint tool-take
       bind seed, read seed
       bind mark, read mark
 
-mint tool-take-like
+mint dock-take-like
   case name
     slot name
   hook make
-    make tool-take-like
+    make dock-take-like
       bind name, read name
 
-mint tool-take-list
+mint dock-take-list
   case name
     slot name
   hook make
-    make tool-take-list
+    make dock-take-list
       bind name, read name
 
-mint tool-take-case
+mint dock-take-case
   case name
     slot name
   hook make
-    make tool-take-case
+    make dock-take-case
       bind name, read name
 
-mint tool-take-seed
-  case env, mint tool-take-seed-env
+mint dock-take-seed
+  case env, mint dock-take-seed-env
     slot env
-  case call, mint tool-take-seed-call
+  case call, mint dock-take-seed-call
     slot call
 
-mint tool-take-seed-env
+mint dock-take-seed-env
   case name
     slot name
   hook make
-    make tool-take-seed-env
+    make dock-take-seed-env
       bind name, read name
 
-mint tool-take-seed-call
-  case call, mint tool-take-seed-call-bind
+mint dock-take-seed-call
+  case call, mint dock-take-seed-call-bind
     slot call
   hook make
-    make tool-take-seed-call
+    make dock-take-seed-call
       bind call, read call
 
-mint tool-take-seed-call-bind
+mint dock-take-seed-call-bind
   case name
     slot name
   hook make
-    make tool-take-seed-call-bind
+    make dock-take-seed-call-bind
       bind name, read name
 
-mint tool-take-mark
-  case private, mint tool-take-mark-private
+mint dock-take-mark
+  case private, mint dock-take-mark-private
     slot private
-  case deprecated, mint tool-take-mark-deprecated
+  case deprecated, mint dock-take-mark-deprecated
     slot deprecated
-  case experimental, mint tool-take-mark-experimental
+  case experimental, mint dock-take-mark-experimental
     slot experimental
 
-mint tool-take-mark-private
+mint dock-take-mark-private
   hook make
-    make tool-take-mark-private
+    make dock-take-mark-private
 
-mint tool-take-mark-deprecated
-  case call, mint tool-take-mark-deprecated-call
+mint dock-take-mark-deprecated
+  case call, mint dock-take-mark-deprecated-call
     slot call
   hook make
-    make tool-take-mark-deprecated
+    make dock-take-mark-deprecated
       bind call, read call
 
-mint tool-take-mark-deprecated-call
+mint dock-take-mark-deprecated-call
   case name
     slot name
   hook make
-    make tool-take-mark-deprecated-call
+    make dock-take-mark-deprecated-call
       bind name, read name
 
-mint tool-take-mark-experimental
+mint dock-take-mark-experimental
   hook make
-    make tool-take-mark-experimental
+    make dock-take-mark-experimental

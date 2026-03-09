@@ -8,20 +8,20 @@ load @cluesurf/term/code/code/fuse/mint
 load @cluesurf/term/code/code/save/mint
   find save
 
-mint tool
+mint dock
   case name
     slot name
-  case tool, mint tool
-    slot tool
-  case take, mint tool-take
+  case dock, mint dock
+    slot dock
+  case take, mint dock-take
     slot take
-  case seed, mint tool-seed
+  case seed, mint dock-seed
     slot seed
-  case show, mint tool-show
+  case show, mint dock-show
     slot show
-  case send, mint tool-send
+  case send, mint dock-send
     slot send
-  case hook, mint tool-hook
+  case hook, mint dock-hook
     slot hook
   case fuse, mint fuse
     slot fuse
@@ -30,9 +30,9 @@ mint tool
   case call, mint call
     slot call
   hook make
-    make tool
+    make dock
       bind name, read name
-      bind tool, read tool
+      bind dock, read dock
       bind take, read take
       bind seed, read seed
       bind show, read show

@@ -1,4 +1,4 @@
 
-mill tool-send
+mill dock-send
   bind mine, load ./mine
   bind mint, load ./mint

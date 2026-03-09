@@ -1,18 +1,18 @@
 
-load @cluesurf/term/code/tool/take/mine
-  find tool-take
+load @cluesurf/term/code/line/take/mine
+  find dock-take
 
-load @cluesurf/term/code/tool/seed/mine
-  find tool-seed
+load @cluesurf/term/code/line/seed/mine
+  find dock-seed
 
-load @cluesurf/term/code/tool/show/mine
-  find tool-show
+load @cluesurf/term/code/line/show/mine
+  find dock-show
 
-load @cluesurf/term/code/tool/send/mine
-  find tool-send
+load @cluesurf/term/code/line/send/mine
+  find dock-send
 
-load @cluesurf/term/code/tool/hook/mine
-  find tool-hook
+load @cluesurf/term/code/line/hook/mine
+  find dock-hook
 
 load @cluesurf/term/code/code/call/mine
   find call
@@ -23,27 +23,27 @@ load @cluesurf/term/code/code/fuse/mine
 load @cluesurf/term/code/code/save/mine
   find save
 
-mine tool
-  mine term, term tool
+mine dock
+  mine term, term dock
     mine term
       slot name
     mine list
-      mine form, like tool
-        slot tool
+      mine form, like dock
+        slot dock
     mine list
-      mine form, like tool-take
+      mine form, like dock-take
         slot take
     mine list
-      mine form, like tool-seed
+      mine form, like dock-seed
         slot seed
     mine list
-      mine form, like tool-show
+      mine form, like dock-show
         slot show
     mine maybe
-      mine form, like tool-send
+      mine form, like dock-send
         slot send
     mine list
-      mine form, like tool-hook
+      mine form, like dock-hook
         slot hook
     mine list
       mine form, like fuse

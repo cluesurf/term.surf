@@ -1,4 +1,4 @@
 
-mill line-load
+mill dock-show
   bind mine, load ./mine
   bind mint, load ./mint

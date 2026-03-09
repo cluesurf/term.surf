@@ -2,12 +2,12 @@
 load @cluesurf/term/code/code/bind/mint
   find bind
 
-mint tool-mill
+mint dock-mill
   case name
     slot name
   case bind, mint bind
     slot bind
   hook make
-    make tool-mill
+    make dock-mill
       bind name, read name
       bind bind, read bind

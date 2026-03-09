@@ -1,5 +1,5 @@
 
-mine tool-send
+mine dock-send
   mine term, term send
     mine term
       slot name

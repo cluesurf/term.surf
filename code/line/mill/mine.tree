@@ -2,7 +2,7 @@
 load @cluesurf/term/code/code/bind/mine
   find bind
 
-mine tool-mill
+mine dock-mill
   mine term, term mill
     mine term
       slot name

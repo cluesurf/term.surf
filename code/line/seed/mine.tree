@@ -1,19 +1,19 @@
 
-mine tool-seed
+mine dock-seed
   mine any
-    mine form, like tool-seed-code
+    mine form, like dock-seed-code
       slot code
-    mine form, like tool-seed-policy
+    mine form, like dock-seed-policy
       slot policy
 
-mine tool-seed-code
+mine dock-seed-code
   mine term, term seed
     mine term, term code
       mine list
-        mine form, like tool-seed-code-case
+        mine form, like dock-seed-code-case
           slot case
 
-mine tool-seed-code-case
+mine dock-seed-code-case
   mine term, term seed
     mine term
       slot name
@@ -21,7 +21,7 @@ mine tool-seed-code-case
       mine term
         slot value
 
-mine tool-seed-policy
+mine dock-seed-policy
   mine term, term seed
     mine term
       slot name
