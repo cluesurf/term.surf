@@ -14,13 +14,13 @@ load @cluesurf/term/code/code/note/mine
 load @cluesurf/term/code/code/seed/mine
   find seed
 
-mine view
+mine component
   mine list
-    mine form, like view-def
-      slot view
+    mine form, like component-def
+      slot component
 
-mine view-def
-  mine term, term view
+mine component-def
+  mine term, term component
     mine term
       slot name
     mine list
@@ -33,93 +33,93 @@ mine view-def
       mine form, like like
         slot like
     mine list
-      mine form, like view-child
+      mine form, like component-child
         slot child
     mine maybe
       mine form, like note
         slot note
 
-mine view-child
+mine component-child
   mine any
-    mine form, like view-node
+    mine form, like component-node
       slot node
-    mine form, like view-text
+    mine form, like component-text
       slot text
-    mine form, like view-slot
+    mine form, like component-slot
       slot slot
-    mine form, like view-fork
+    mine form, like component-fork
       slot fork
-    mine form, like view-walk
+    mine form, like component-walk
       slot walk
 
-mine view-node
+mine component-node
   mine term
     slot name
     mine list
-      mine form, like view-bind
+      mine form, like component-bind
         slot bind
     mine list
-      mine form, like view-child
+      mine form, like component-child
         slot child
 
-mine view-bind
+mine component-bind
   mine term, term bind
     mine term
       slot name
     mine form, like seed
       slot seed
 
-mine view-text
+mine component-text
   mine text
     slot text
 
-mine view-slot
+mine component-slot
   mine term, term slot
     mine term
       slot name
 
-mine view-fork
+mine component-fork
   mine term, term fork
     mine term, term test
     mine list
-      mine form, like view-fork-hook
+      mine form, like component-fork-hook
         slot hook
 
-mine view-fork-hook
+mine component-fork-hook
   mine any
-    mine form, like view-fork-test
+    mine form, like component-fork-test
       slot test
-    mine form, like view-fork-hold
+    mine form, like component-fork-hold
       slot hold
-    mine form, like view-fork-miss
+    mine form, like component-fork-miss
       slot miss
 
-mine view-fork-test
+mine component-fork-test
   mine term, term hook
     mine term, term test
     mine list
-      mine form, like view-child
+      mine form, like component-child
         slot child
 
-mine view-fork-hold
+mine component-fork-hold
   mine term, term hook
     mine term, term hold
     mine list
-      mine form, like view-child
+      mine form, like component-child
         slot child
 
-mine view-fork-miss
+mine component-fork-miss
   mine term, term hook
     mine term, term miss
     mine list
-      mine form, like view-child
+      mine form, like component-child
         slot child
 
-mine view-walk
+mine component-walk
   mine term, term walk
     mine term, term list
     mine form, like seed
       slot seed
     mine list
-      mine form, like view-child
+      mine form, like component-child
         slot child

@@ -1,5 +1,5 @@
 
-mint lock
+mint lockfile
   case base
     slot base
   case load, mint load

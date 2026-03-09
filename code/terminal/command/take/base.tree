@@ -1,4 +1,4 @@
 
-mill lock
+mill tool-take
   bind mine, load ./mine
   bind mint, load ./mint
