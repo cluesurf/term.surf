@@ -35,16 +35,6 @@ Each directory under `code/` defines a DSL vocabulary (role).
 | `package/lockfile` | Lockfile definitions (resolved dependency graph) |
 | `locale/text` | Internationalization string definitions (text term, string pairs) |
 
-### Mill/Mine/Mint System
-
-The core DSL is the **mill** system, which has three layers:
-
-- **mill** declares a combined parser/builder processor
-- **mine** (parser) matches patterns in the input and emits named nodes
-  via `slot`
-- **mint** (builder) observes mine events via `case`, stores values in
-  `slot`, and constructs typed AST nodes in `hook make`
-
 ## License
 
 Copyright 2021-2026+ <a href='https://clue.surf'>ClueSurf</a>
