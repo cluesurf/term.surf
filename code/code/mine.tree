@@ -11,7 +11,7 @@ load @cluesurf/term/code/code/call/mine
 load @cluesurf/term/code/code/hook/mine
   find hook
 
-load @cluesurf/term/code/configuration/seed/mine
+load @cluesurf/term/code/seed/seed/mine
   find host
 
 load @cluesurf/term/code/code/load/mine

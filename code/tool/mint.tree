@@ -1,0 +1,43 @@
+
+load @cluesurf/term/code/code/call/mint
+  find call
+
+load @cluesurf/term/code/code/fuse/mint
+  find fuse
+
+load @cluesurf/term/code/code/save/mint
+  find save
+
+mint tool
+  case name
+    slot name
+  case tool, mint tool
+    slot tool
+  case take, mint tool-take
+    slot take
+  case seed, mint tool-seed
+    slot seed
+  case show, mint tool-show
+    slot show
+  case send, mint tool-send
+    slot send
+  case hook, mint tool-hook
+    slot hook
+  case fuse, mint fuse
+    slot fuse
+  case save, mint save
+    slot save
+  case call, mint call
+    slot call
+  hook make
+    make tool
+      bind name, read name
+      bind tool, read tool
+      bind take, read take
+      bind seed, read seed
+      bind show, read show
+      bind send, read send
+      bind hook, read hook
+      bind fuse, read fuse
+      bind save, read save
+      bind call, read call
