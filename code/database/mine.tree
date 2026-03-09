@@ -14,19 +14,19 @@ load @cluesurf/term/code/code/note/mine
 load @cluesurf/term/code/code/seed/mine
   find seed
 
-load @cluesurf/term/code/base/find/mine
+load @cluesurf/term/code/database/find/mine
   find db-find
 
-load @cluesurf/term/code/base/db-make/mine
+load @cluesurf/term/code/database/db-make/mine
   find db-make
 
-load @cluesurf/term/code/base/db-mold/mine
+load @cluesurf/term/code/database/db-mold/mine
   find db-mold
 
-load @cluesurf/term/code/base/db-save/mine
+load @cluesurf/term/code/database/db-save/mine
   find db-save
 
-load @cluesurf/term/code/base/toss/mine
+load @cluesurf/term/code/database/toss/mine
   find db-toss
 
 mine base

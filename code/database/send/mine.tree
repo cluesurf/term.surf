@@ -2,10 +2,10 @@
 load @cluesurf/term/code/code/seed/mine
   find seed
 
-load @cluesurf/term/code/base/over/mine
+load @cluesurf/term/code/database/over/mine
   find db-over
 
-load @cluesurf/term/code/base/fork-hook/mine
+load @cluesurf/term/code/database/fork-hook/mine
   find db-send-fork-hook
 
 mine db-send

@@ -2,7 +2,7 @@
 load @cluesurf/base/code/deck
   find deck-deck-host
 
-load @cluesurf/term/code/deck/deck/link/mint
+load @cluesurf/term/code/package/deck/link/mint
   find deck-link
 
 mint deck-host, like deck-deck-host

@@ -1,5 +1,5 @@
 
-load @cluesurf/term/code/book/surf
+load @cluesurf/term/code/document/surf
   find book-surf
   find book-bold
   find book-tilt

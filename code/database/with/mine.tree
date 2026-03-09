@@ -1,5 +1,5 @@
 
-load @cluesurf/term/code/base/find/mine
+load @cluesurf/term/code/database/find/mine
   find db-find
 
 mine db-with

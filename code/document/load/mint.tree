@@ -1,5 +1,5 @@
 
-load @cluesurf/term/code/book/load
+load @cluesurf/term/code/document/load
   find book-load
   find book-load-find
 

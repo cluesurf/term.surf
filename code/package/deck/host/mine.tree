@@ -1,5 +1,5 @@
 
-load @cluesurf/term/code/deck/deck/link/mine
+load @cluesurf/term/code/package/deck/link/mine
   find deck-link
 
 mine deck-host

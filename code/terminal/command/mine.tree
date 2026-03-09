@@ -1,8 +1,56 @@
 
-mine task
-  mine list
-    mine any
-      mine form, like hook
+load @cluesurf/term/code/terminal/command/take/mine
+  find tool-take
+
+load @cluesurf/term/code/terminal/command/seed/mine
+  find tool-seed
+
+load @cluesurf/term/code/terminal/command/show/mine
+  find tool-show
+
+load @cluesurf/term/code/terminal/command/send/mine
+  find tool-send
+
+load @cluesurf/term/code/terminal/command/hook/mine
+  find tool-hook
+
+load @cluesurf/term/code/code/call/mine
+  find call
+
+load @cluesurf/term/code/code/fuse/mine
+  find fuse
+
+load @cluesurf/term/code/code/save/mine
+  find save
+
+mine tool
+  mine term, term tool
+    mine term
+      slot name
+    mine list
+      mine form, like tool
+        slot tool
+    mine list
+      mine form, like tool-take
+        slot take
+    mine list
+      mine form, like tool-seed
+        slot seed
+    mine list
+      mine form, like tool-show
+        slot show
+    mine maybe
+      mine form, like tool-send
+        slot send
+    mine list
+      mine form, like tool-hook
         slot hook
-      mine form, like load
-        slot load
+    mine list
+      mine form, like fuse
+        slot fuse
+    mine list
+      mine form, like save
+        slot save
+    mine list
+      mine form, like call
+        slot call

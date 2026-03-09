@@ -1,7 +1,0 @@
-
-mint tool-send
-  case name
-    slot name
-  hook make
-    make tool-send
-      bind name, read name

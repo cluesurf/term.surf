@@ -1,5 +1,5 @@
 
-load @cluesurf/term/code/book/wall
+load @cluesurf/term/code/document/wall
   find book-wall
 
 mint wall, like book-wall

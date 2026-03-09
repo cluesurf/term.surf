@@ -1,5 +1,5 @@
 
-load @cluesurf/term/code/book/bind
+load @cluesurf/term/code/document/bind
   find book-bind
   find book-bind-mind
   find book-bind-cite

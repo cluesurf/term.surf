@@ -1,5 +1,5 @@
 
-load @cluesurf/term/code/base/send/mine
+load @cluesurf/term/code/database/send/mine
   find db-send-fork
 
 mine db-sort

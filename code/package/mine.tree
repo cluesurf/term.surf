@@ -1,22 +1,22 @@
 
-load @cluesurf/term/code/deck/deck/link/mine
+load @cluesurf/term/code/package/deck/link/mine
   find deck-link
   find deck-term
   find deck-deck
 
-load @cluesurf/term/code/deck/deck/mind/mine
+load @cluesurf/term/code/package/deck/mind/mine
   find deck-mind
 
-load @cluesurf/term/code/deck/deck/host/mine
+load @cluesurf/term/code/package/deck/host/mine
   find deck-host
 
-load @cluesurf/term/code/deck/deck/case/mine
+load @cluesurf/term/code/package/deck/case/mine
   find deck-case
 
-load @cluesurf/term/code/deck/role/mine
+load @cluesurf/term/code/package/role/mine
   find role
 
-load @cluesurf/term/code/deck/load/mine
+load @cluesurf/term/code/package/load/mine
   find load
 
 mine deck

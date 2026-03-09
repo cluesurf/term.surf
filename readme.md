@@ -17,23 +17,23 @@ how `.tree` source is parsed, analyzed, and transformed.
 
 Each directory under `code/` defines a DSL vocabulary (role).
 
-| role | note |
+| directory | note |
 | --- |:--- |
 | `code` | Main programming language terms (task, form, call, fork, walk, etc.) |
 | `form` | Simple struct definitions without methods or tasks |
-| `bind` | Native binding declarations for code generation (form with `name`, task signatures, seed constants) |
-| `mill` | Parser grammar definitions (mine, mint, mill) |
-| `seed` | Configuration and settings (key-value constants) |
-| `view` | UI component definitions |
-| `tune` | Audio processing definitions |
-| `flow` | Animation and transition definitions |
-| `host` | Server route definitions (extends code with route hooks and port bindings) |
-| `line` | CLI command definitions (extends code with argument handling) |
-| `base` | Database definitions (migrations with move next/back, queries with find) |
-| `book` | Text content markup that generates to HTML, Markdown, or LaTeX |
-| `deck` | Package manifest definitions (name, version, dependencies, etc.) |
-| `lock` | Lockfile definitions (resolved dependency graph) |
-| `text` | Internationalization string definitions (text term, string pairs) |
+| `bridge` | Native binding declarations for code generation (form with `name`, task signatures, seed constants) |
+| `encoding/decoder` | Parser grammar definitions (mine, mint, mill) |
+| `configuration` | Configuration and settings (key-value constants) |
+| `interface/component` | UI component definitions |
+| `audio` | Audio processing definitions |
+| `animation` | Animation and transition definitions |
+| `server` | Server route definitions (extends code with route hooks and port bindings) |
+| `terminal/command` | CLI command definitions (extends code with argument handling) |
+| `database` | Database definitions (migrations with move next/back, queries with find) |
+| `document` | Text content markup that generates to HTML, Markdown, or LaTeX |
+| `package` | Package manifest definitions (name, version, dependencies, etc.) |
+| `package/lockfile` | Lockfile definitions (resolved dependency graph) |
+| `locale/text` | Internationalization string definitions (text term, string pairs) |
 
 ### Mill/Mine/Mint System
 

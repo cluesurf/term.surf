@@ -1,35 +1,24 @@
 
-# hook make
-#   note <Create a new deck repository>
-#   take name
-#   take head
-#     lead <-t>
-#     lead <--title>
-#   task make-deck
+load @cluesurf/term/code/code/call/mine
+  find call
 
-mine hook
+mine tool-hook
+  mine any
+    mine form, like tool-hook-boot
+      slot boot
+    mine form, like tool-hook-halt
+      slot halt
+
+mine tool-hook-boot
   mine term, term hook
-    slot name
-    mine maybe
-      mine term, term note
-        mine text
-          slot note
-    mine list
-      mine form, like hook-take
-        slot take
-    mine maybe
-      mine term, term task
-        mine text
-          slot task
+    mine term, term boot
+      mine list
+        mine form, like call
+          slot call
 
-mine hook-take
-  mine term, term take
-    slot name
-    mine list
-      mine form, like hook-take-lead
-        slot lead
-
-mine hook-take-lead
-  mine term, term lead
-    mine text
-      slot flag
+mine tool-hook-halt
+  mine term, term hook
+    mine term, term halt
+      mine list
+        mine form, like call
+          slot call

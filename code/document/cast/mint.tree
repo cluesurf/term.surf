@@ -1,5 +1,5 @@
 
-load @cluesurf/term/code/book/cast
+load @cluesurf/term/code/document/cast
   find book-cast
 
 mint cast, like book-cast

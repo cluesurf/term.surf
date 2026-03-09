@@ -1,35 +1,35 @@
 
-load @cluesurf/term/code/base/send/mine
+load @cluesurf/term/code/database/send/mine
   find db-send
 
-load @cluesurf/term/code/base/hold/mine
+load @cluesurf/term/code/database/hold/mine
   find db-hold
 
-load @cluesurf/term/code/base/bond/mine
+load @cluesurf/term/code/database/bond/mine
   find db-bond
 
-load @cluesurf/term/code/base/sort/mine
+load @cluesurf/term/code/database/sort/mine
   find db-sort
 
-load @cluesurf/term/code/base/fold/mine
+load @cluesurf/term/code/database/fold/mine
   find db-fold
 
-load @cluesurf/term/code/base/miss/mine
+load @cluesurf/term/code/database/miss/mine
   find db-miss
 
-load @cluesurf/term/code/base/lone/mine
+load @cluesurf/term/code/database/lone/mine
   find db-lone
 
-load @cluesurf/term/code/base/has/mine
+load @cluesurf/term/code/database/has/mine
   find db-has
 
-load @cluesurf/term/code/base/mesh/mine
+load @cluesurf/term/code/database/mesh/mine
   find db-mesh
 
-load @cluesurf/term/code/base/over/mine
+load @cluesurf/term/code/database/over/mine
   find db-over
 
-load @cluesurf/term/code/base/db-with/mine
+load @cluesurf/term/code/database/db-with/mine
   find db-with
   find db-with-loop
 

@@ -2,7 +2,7 @@
 load @cluesurf/term/code/code/seed/mine
   find seed
 
-load @cluesurf/term/code/tool/mill/mine
+load @cluesurf/term/code/terminal/command/mill/mine
   find tool-mill
 
 mine tool-take

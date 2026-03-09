@@ -1,5 +1,5 @@
 
-load @cluesurf/term/code/lock/link
+load @cluesurf/term/code/package/lockfile/link
   find lock-link
   find lock-link-load
 

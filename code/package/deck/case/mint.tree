@@ -2,10 +2,10 @@
 load @cluesurf/base/code/deck
   find deck-deck-case
 
-load @cluesurf/term/code/deck/deck/link/mint
+load @cluesurf/term/code/package/deck/link/mint
   find deck-link
 
-load @cluesurf/term/code/deck/deck/host/mint
+load @cluesurf/term/code/package/deck/host/mint
   find deck-host
 
 mint deck-case, like deck-deck-case

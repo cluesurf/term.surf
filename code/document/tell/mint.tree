@@ -1,5 +1,5 @@
 
-load @cluesurf/term/code/book/tell
+load @cluesurf/term/code/document/tell
   find book-tell
 
 mint tell, like book-tell

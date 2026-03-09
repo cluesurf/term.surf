@@ -1,8 +1,8 @@
 
-load @cluesurf/term/code/base/fold/mine
+load @cluesurf/term/code/database/fold/mine
   find db-fold
 
-load @cluesurf/term/code/base/sort/mine
+load @cluesurf/term/code/database/sort/mine
   find db-sort
 
 mine db-over

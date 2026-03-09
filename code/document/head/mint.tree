@@ -1,5 +1,5 @@
 
-load @cluesurf/term/code/book/head
+load @cluesurf/term/code/document/head
   find book-head
 
 mint head, like book-head

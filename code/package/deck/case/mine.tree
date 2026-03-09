@@ -1,8 +1,8 @@
 
-load @cluesurf/term/code/deck/deck/link/mine
+load @cluesurf/term/code/package/deck/link/mine
   find deck-link
 
-load @cluesurf/term/code/deck/deck/host/mine
+load @cluesurf/term/code/package/deck/host/mine
   find deck-host
 
 mine deck-case

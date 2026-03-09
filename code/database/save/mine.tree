@@ -8,16 +8,16 @@ load @cluesurf/term/code/code/seed/mine
 load @cluesurf/term/code/code/make/mine
   find make
 
-load @cluesurf/term/code/base/hold/mine
+load @cluesurf/term/code/database/hold/mine
   find db-hold
 
-load @cluesurf/term/code/base/send/mine
+load @cluesurf/term/code/database/send/mine
   find db-send
 
-load @cluesurf/term/code/base/bond/mine
+load @cluesurf/term/code/database/bond/mine
   find db-bond
 
-load @cluesurf/term/code/base/find/mine
+load @cluesurf/term/code/database/find/mine
   find db-find
 
 load @cluesurf/term/code/code/tag/mine

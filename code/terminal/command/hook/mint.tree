@@ -1,38 +1,23 @@
 
-load @cluesurf/base/code/command
-  find line-hook
-  find line-hook-take
-  find line-hook-take-lead
+load @cluesurf/term/code/code/call/mint
+  find call
 
-mint hook, like line-hook
-  case name
-    slot name
-  case note
-    slot note
-  case take, mint hook-take
-    slot take
-  case task
-    slot task
-  hook make
-    make line-hook
-      bind name, read name
-      bind note, read note
-      bind take, read take
-      bind task, read task
+mint tool-hook
+  case boot, mint tool-hook-boot
+    slot boot
+  case halt, mint tool-hook-halt
+    slot halt
 
-mint hook-take, like line-hook-take
-  case name
-    slot name
-  case lead, mint hook-take-lead
-    slot lead
+mint tool-hook-boot
+  case call, mint call
+    slot call
   hook make
-    make line-hook-take
-      bind name, read name
-      bind lead, read lead
+    make tool-hook-boot
+      bind call, read call
 
-mint hook-take-lead, like line-hook-take-lead
-  case flag
-    slot flag
+mint tool-hook-halt
+  case call, mint call
+    slot call
   hook make
-    make line-hook-take-lead
-      bind flag, read flag
+    make tool-hook-halt
+      bind call, read call
