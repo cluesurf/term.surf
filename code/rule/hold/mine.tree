@@ -1,0 +1,118 @@
+
+load @cluesurf/term/code/code/call/mine
+  find call
+
+mine hold
+  mine term, term hold
+    mine term
+      slot name
+    mine form, like call
+      slot claim
+    mine list
+      mine form, like step
+        slot step
+
+mine step
+  mine any
+    mine form, like melt
+      slot melt
+    mine form, like calm
+      slot calm
+    mine form, like cite
+      slot cite
+    mine form, like self
+      slot self
+    mine form, like seed
+      slot seed
+    mine form, like rest
+      slot rest
+    mine form, like weld
+      slot weld
+    mine form, like turn
+      slot turn
+    mine form, like link
+      slot link
+    mine form, like take
+      slot take
+    mine form, like have
+      slot have
+    mine form, like find
+      slot find
+
+mine melt
+  mine term, term melt
+    mine term
+      slot arg
+
+mine calm
+  mine term, term calm
+    mine term
+      slot arg
+
+mine cite
+  mine term, term cite
+    mine term
+      slot arg
+
+mine turn
+  mine term, term turn
+    mine term
+      slot arg
+
+mine take
+  mine term, term take
+    mine term
+      slot arg
+
+mine find
+  mine term, term find
+    mine term
+      slot arg
+
+mine self
+  mine term, term self
+    mine term
+      slot arg
+    mine list
+      mine form, like step
+        slot step
+
+mine seed
+  mine term, term seed
+    mine term
+      slot arg
+    mine list
+      mine form, like step
+        slot step
+
+mine rest
+  mine term, term rest
+    mine term
+      slot arg
+    mine list
+      mine form, like step
+        slot step
+
+mine weld
+  mine term, term weld
+    mine term
+      slot arg
+    mine list
+      mine form, like step
+        slot step
+
+mine link
+  mine term, term link
+    mine term
+      slot arg
+    mine list
+      mine form, like step
+        slot step
+
+mine have
+  mine term, term have
+    mine term
+      slot arg
+    mine list
+      mine form, like step
+        slot step

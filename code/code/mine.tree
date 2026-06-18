@@ -80,6 +80,9 @@ load @cluesurf/term/code/code/tune/mine
 load @cluesurf/term/code/code/view/mine
   find view
 
+load @cluesurf/term/code/code/zone/mine
+  find zone
+
 mine code
   mine list
     mine any

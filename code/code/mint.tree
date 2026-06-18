@@ -54,3 +54,5 @@ mint code
     slot tune
   case view, mint view
     slot view
+  case zone, mint zone
+    slot zone
