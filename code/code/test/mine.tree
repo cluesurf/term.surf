@@ -1,29 +1,13 @@
 
+note <the test DSL: one key head, `test`. `test <phrase>` names a test with a human phrase, then a flow of ordinary statements ending in an assertion (`want`). It lowers to the `test` meta object (a name and a work), which `run` executes. The body is plain Seed, so every kind of test (unit, functional, integration, e2e) is the same head with a different body.>
+
+load @cluesurf/term/code/code/tool/flow/mine
+  find flow
+
 mine test
   mine term, term test
-    mine term
+    mine text
       slot name
-    mine list
-      mine form, like zone
-        slot zone
-
-mine zone
-  mine any
-    mine form, like call
-      slot call
-    mine form, like find
-      slot find
-
-mine find
-  mine term, term find
-    mine term
-      slot name
-    mine list
-      mine form, like bind
-        slot bind
     mine list
       mine form, like flow
-        slot flow
-    mine list
-      mine form, like hook
-        slot hook
+        slot work
