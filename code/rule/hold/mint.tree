@@ -2,44 +2,77 @@
 load @cluesurf/term/code/code/call/mint
   find call
 
+load @cluesurf/term/code/code/like/mint
+  find like
+
 mint hold, like hold
   case name
     slot name
-  case claim, mint call
-    slot claim
   case step, mint step
     slot step
   hook make
     make hold
       bind name, read name
-      bind claim, read claim
       bind step, read step
 
 mint step
-  case melt, mint melt
-    slot melt
-  case calm, mint calm
-    slot calm
-  case cite, mint cite
-    slot cite
-  case turn, mint turn
-    slot turn
+  case show, mint show
+    slot show
+  case mark, mint mark
+    slot mark
   case take, mint take
     slot take
-  case find, mint find
-    slot find
-  case self, mint self
-    slot self
-  case seed, mint seed
-    slot seed
-  case rest, mint rest
-    slot rest
-  case weld, mint weld
-    slot weld
-  case link, mint link
-    slot link
   case have, mint have
     slot have
+  case fold, mint fold
+    slot fold
+  case case, mint case
+    slot case
+  case calm, mint calm
+    slot calm
+  case melt, mint melt
+    slot melt
+  case cite, mint cite
+    slot cite
+  case find, mint find
+    slot find
+
+mint show, like show
+  case claim, mint call
+    slot claim
+  hook make
+    make show
+      bind claim, read claim
+
+mint mark, like mark
+  case name
+    slot name
+  case like, mint like
+    slot like
+  hook make
+    make mark
+      bind name, read name
+      bind like, read like
+
+mint fold, like fold
+  case arg
+    slot arg
+  case step, mint step
+    slot step
+  hook make
+    make fold
+      bind arg, read arg
+      bind step, read step
+
+mint case, like case
+  case arg
+    slot arg
+  case step, mint step
+    slot step
+  hook make
+    make case
+      bind arg, read arg
+      bind step, read step
 
 mint melt, like melt
   case arg
